@@ -1,0 +1,1745 @@
+@import url("https://p.typekit.net/p.css?s=1&k=pbn8cpk&ht=tk&f=10879.10886.32874&a=4862732&app=typekit&e=css");
+
+@font-face {
+  font-family: "Futura";
+  src: url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("https://use.typekit.net/af/053fc9/00000000000000003b9af1e4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/053fc9/00000000000000003b9af1e4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/053fc9/00000000000000003b9af1e4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../lib/fonts/Roboto-Regular.ttf') format('truetype'), url("../../lib/fonts/Roboto-Regular.woff") format("woff"), url("../../lib/fonts/Roboto-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../lib/fonts/Roboto-Bold.ttf') format('truetype'), url("../../lib/fonts/Roboto-Bold.woff") format("woff"), url("../../lib/fonts/Roboto-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../lib/fonts/Roboto-Medium.ttf') format('truetype'), url("../../lib/fonts/Roboto-Medium.woff") format("woff"), url("../../lib/fonts/Roboto-Medium.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+html {
+  background-color: #f5f5f5;
+}
+
+body {
+  background-color: #fff;
+}
+
+#root {  
+  display: inline-block;
+  width: 100%;  
+  overflow: auto;
+  position: absolute;
+  height:100%;
+  left: 0;
+  top: 0;
+  background-color: #f5f5f5;
+}
+
+.router_root {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.homePage_wrapper {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+.homePage_inner h1 {
+  text-align: center;
+}
+
+a {
+  color: #0f9ad6;
+  text-decoration: none;
+}
+
+/* removes number spinner from input fields */
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+td {
+  white-space: pre-wrap;
+}
+
+tr td:first-child {
+  font-weight: 500;
+}
+
+td#image {
+  text-align: right;
+  position: relative;
+  top: 38px;
+  background: #fff;
+  background-color: #fff;
+  border-bottom: 0;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* TYPOGRAPHY */
+
+h3 {
+  font-size: 17px;
+  color: #606061;  
+  font-weight: 900;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* GENERAL */
+
+#root .button_50x50 {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 0;
+}
+
+#root .button_50x50 svg path {
+  fill: #000;
+}
+
+.bluebutton{
+
+}
+
+#root .button_40x40 {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0;
+  background: #005AA9;
+  border-radius: 89px;
+  margin-top: 6px;
+  color: #fff;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* LOGIN */
+
+.error-text {
+  color: red;
+  font-size: .8em;
+  font-weight: 100;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+#root .welcome_loginButton {
+  background-color: #005AA9;
+  color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  border-radius: 20px;
+}
+
+#root .welcome_loginPanelButton {
+  background-color: #55555f;
+  color: #fff;
+}
+
+#root .welcome_loginButton:hover,
+#root .welcome_loginPanelButton:hover {
+  opacity: 0.8;
+}
+
+.login_Panel {
+  justify-content: center;
+  align-items: center;
+  height: calc(100% + 50px);
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background: url("../../lib/images/background-overlay.png"), linear-gradient(135deg, #111111 0%, #333333 100%);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#root .login_PanelInner {
+  max-width: 600px;
+  flex-basis: 90%;
+}
+
+.login_Panel form {
+  display: flex;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+form .snackbarContentWarning {
+  justify-content: center;
+  background-color: #a93f3f;
+}
+
+form .snackbarContentSuccess {
+  justify-content: center;
+  background-color: #43a047;
+}
+
+.shouldAnimate {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  top: -200px;
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.shouldAnimate.animateDownFadeIn {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  background-color: transparent;
+}
+
+.boldText {
+  font-family: "Futura", "Helvetica", "Arial", sans-serif;
+  font-weight: 900;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* MAIN NAVIGATION */
+.Splash-logo {
+  width: 95%;
+  max-width: 1025px;
+  height: auto;  
+}
+
+/* If the screen size is 601px wide or more*/
+@media screen and (min-width: 951px) {
+  .Splash-logo-message {
+    font-size: 50px;
+  }
+}
+
+/* If the screen size is 600px wide or less*/
+@media screen and (max-width: 950px) {
+  .Splash-logo-message {
+    font-size: 17px;
+  }
+}
+.App-logo-new {
+  width: 136.99px;
+  height: 24px;
+  margin: 15px;
+}
+.App-logo {
+
+}
+.Guest-App-logo {
+  width: 70px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.menu_TopPanel {
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 900;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_TopPanelLogin {
+  background-color: transparent;
+}
+
+.menu_TopPanel .button_menuTopPanelOpen,
+.menu_TopPanel .button_menuTopPanelClose {
+  background-color: #55555f;
+  border-radius: 0;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 0;
+}
+
+.menu_TopPanel .button_menuTopPanelClose {
+  background-color: #55555f;
+}
+
+.menu_TopPanel .button_menuTopPanelOpen:hover {
+  background-color: #55555f;
+}
+
+.menu_TopPanel .button_menuTopPanelClose:hover {
+  background-color: #55555f;
+}
+
+.menu_LeftDrawer {
+  height: 100%;
+  width: 170px;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  margin-top: 50px;
+  transform: translate(-250px, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu_LeftDrawer a {
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  position: relative;
+}
+
+.menu_LeftDrawer a:hover {
+  color: #f1f1f1;
+}
+
+.menu_LeftDrawer.active {
+  transform: translate(0, 0);
+}
+
+/* custom Material UI link style */
+
+.menu_LeftDrawer .overrideMUI_linkItem {
+  padding: 0;
+}
+
+.menu_LeftDrawer ul>.overrideMUI_linkItem {
+  padding: 12px 16px;
+}
+
+.overrideMUI_linkItem a {
+  padding: 12px 16px;
+  display: flex;
+  justify-items: center;
+  width: 100%;
+  align-items: center;
+}
+
+.overrideMUI_linkItem a svg {
+  width: 24px;
+  color: rgba(0, 0, 0, 0.54);
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.overrideMUI_linkItem a svg path {
+  fill: #fff;
+}
+
+.overrideMUI_linkItem a div {
+  flex: 1 1 auto;
+  padding: 0 16px;
+  min-width: 0;
+}
+
+.overrideMUI_linkItem a div h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  text-transform: none;
+  display: block;
+}
+
+.overrideMUI_linkItem a.selected {
+  background: #3e7094;
+}
+
+.overrideMUI_linkItem a.selected svg path {
+  fill: #fff;
+}
+
+.overrideMUI_linkItem a.selected h3 {
+  color: #fff;
+}
+
+.menu_TopPanel .buttonUserSettings {
+  padding: 0;
+  text-align: center;
+  min-width: 140px;
+  height: 50px;
+  color: #fff;
+}
+
+.menu_TopPanel .buttonUserSettings:hover {
+  background-color: #0f9ad6;
+}
+
+.menu_TopPanel .buttonUserSettings svg {
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  right: 10px;
+}
+
+.menu_TopPanel .buttonUserSettings svg path {
+  fill: #fff;
+}
+
+.menu_TopPanel .buttonUserSettings>span {
+  text-transform: none;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+  font-weight: bold;
+  padding: 0 30px 0 16px;
+  line-height: 100%;
+}
+
+.menu_UserSettings._displayInherit .buttonUserSettings_dropDown {
+  display: inherit;
+}
+
+.menu_UserSettings._displayNone .buttonUserSettings_dropDown {
+  display: none;
+}
+
+.menu_TopPanel .buttonUserSettings>span span {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.menu_TopPanel .buttonUserSettings_dropDown {
+  min-width: 140px;
+  top: -5px !important;
+  left: 5px !important;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* MAIN CONTENT */
+
+.mainContent {
+  margin-bottom: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  height:100%;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* GRID */
+
+.grid_xs12 {
+  padding: 20px;
+}
+
+/* --- TABLE BLUE HOVER --- */
+
+.tableBlueHover tbody tr:hover {
+  background-color: #E5F2FB !important;
+}
+
+.tableBlueHover button:hover path {
+  fill: #0d6f99 !important;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* USER & USER LIST */
+
+.loansList_Table._tableUserList thead tr th:first-child {
+  padding-left: 14px;
+}
+
+.userList_table thead {
+  background-color: #a5a5a5;
+}
+
+.userList_table thead tr {
+  height: 33px;
+  background-color: #868686;
+}
+
+.userList_table thead tr th {
+  color: #fff;
+  border: none !important;
+}
+
+.loansList_Table thead tr th.user_TableActions {
+  width: 70px;
+  padding: 0;
+  text-align: center;
+  max-width: 70px;
+}
+
+.loansList_Table thead tr th.user_TableActions div>span>svg {
+  display: none;
+}
+
+.userList_table thead .sortActive,
+.userList_table thead .sorting_Label {
+  color: #fff;
+}
+
+.userList_table tbody {
+  background-color: #fff;
+}
+
+.userList_table tbody tr {
+  min-height: 70px;
+}
+
+.userList_table tbody tr:nth-child(even) {
+  background: #f1f1f1;
+}
+
+.userList_table tbody tr td {
+  border-bottom: 2px solid #c3c3c4;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.loansList_Table tbody tr td.user_TableActions {
+  width: 70px;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loansList_Table tbody tr td.user_TableActions .button_TableActions,
+.loansList_Table tbody tr td.user_TableActions .button_TableActions {
+  flex: 1 0 0px;
+  justify-content: flex-end;
+  display: flex;
+  height: 70px;
+  width: 70px;
+  min-width: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.loansList_Table tbody tr td.user_TableActions .button_TableActions._userEdit:hover {
+  background-color: #b3e5fc;
+}
+
+.loansList_Table tbody tr td.user_TableActions .button_TableActions._userDelete:hover {
+  background-color: #a93f3f;
+}
+
+.loansList_Table tbody tr td.user_TableActions svg {
+  margin: 0 auto;
+}
+
+.loansList_Table tbody tr td.user_TableActions svg path {
+  fill: #4b4b4b;
+}
+
+.grid_addNewUser {
+  padding: 5px 12px 0px !important;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.grid_addNewUser .button_addNewUser svg path {
+  fill: #fff;
+}
+
+.grid_addNewUser .button_addNewUser {
+  color: rgb(255, 255, 255);
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  min-width: 30px;
+  background: #55555f;
+}
+
+.user_TableEmail a {
+  color: #0f9ad6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dialog_UpdateUser>div {
+  max-width: 100%;
+  height: calc(100%);
+  width: calc(100%);
+}
+
+.dialog_UpdateUser form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Default */
+
+.dialog_default90>div {
+  max-width: 100%;
+  height: calc(100%);
+  width: calc(100%);
+}
+
+.dialog_default90 form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* DIOLOGS */
+
+.dialogInner_PersonalSettings header {
+  color: #606061;
+  min-height: 50px;
+  padding: 0 28px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  font-size: 24px;
+}
+
+.dialogInner_PersonalSettings {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dialogInner_PersonalSettings header .button_closePersonalSettings {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialogInner_PersonalSettings header .button_closePersonalSettings {
+  fill: #fff;
+}
+
+.dialogInner_PersonalSettings section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  height: 100%;
+}
+
+.dialogInner_PersonalSettings section nav {
+  flex: 1 0 0;
+  background-color: #f3f3f3;
+  max-width: 245px;
+  overflow: auto;
+  min-height: calc(100vh - 100px);
+}
+
+.dialogInner_PersonalSettings section nav a {
+  display: flex;
+  min-height: 35px;
+  position: relative;
+  text-decoration: none;
+  color: #495057;
+}
+
+.dialogInner_PersonalSettings section nav a.active {
+  color: #000;
+  background-color: #fff;
+}
+
+.dialogInner_PersonalSettings section nav a.active button {
+  color: #000;
+  font-weight: 700;
+}
+
+.dialogInner_PersonalSettings section nav a.active:before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: #55555f;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.dialogInner_PersonalSettings section nav a button {
+  padding: 0;
+  min-height: 35px;
+  width: 100%;
+  align-items: left;
+  justify-content: left;
+  padding-left: 26px;
+}
+
+.dialogInner_PersonalSettings section main {
+  flex: 2 0 0;
+  overflow: auto;
+}
+
+/* Dialog Bottom Action */
+
+/* ._DialogActions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    align-items: center;
+    margin: 0;
+    align-items: center;
+    min-height: 50px;
+} */
+
+/* ._DialogActionsNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    align-items: center;
+    margin: 0;
+    align-items: center;
+    min-height: 50px;
+} */
+
+._DialogActionsNav {
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  width: 80vh;
+  margin-left: -34px;
+}
+
+.left_DialogActions {
+  flex: 1 0 0px;
+  justify-content: flex-start;
+  display: flex;
+  height: 50px;
+}
+
+.right_DialogActions {
+  flex: 1 0 0px;
+  justify-content: flex-end;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+.right_DialogActions .button_userRemove {
+  background-color: rgb(255, 153, 0);
+  width: 30px;
+  min-width: 30px;
+  padding: 0;
+  height: 30px;
+  min-height: 30px;
+  margin-right: 16px;
+}
+
+.right_DialogActions .button_userRemove:hover {
+  opacity: 1;
+  background-color: rgb(255, 61, 0);
+}
+
+/* USER SNACKBAR */
+
+.snackbar_user_deleted>div {
+  background-color: rgb(156, 48, 40);
+}
+
+.snackbar_user_added>div {
+  background-color: rgb(73, 138, 62);
+}
+
+.snackbar_user_updated>div {
+  background-color: rgb(52, 90, 117);
+}
+
+.snackbar_user_deleted>div>span {
+  font-size: 17px;
+  line-height: 120%;
+  font-weight: 300;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------- */
+
+/* LOANS LIST */
+
+.loansList_Table thead {
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #DADCE0;
+  /* Work Sans / 14 Medium */
+font-family: Work Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 12px !important;
+line-height: 14px;
+height: 48px;
+/* Text / Black */
+color: #000000;
+
+text-transform: uppercase;
+
+}
+
+.loansList_Table thead tr {
+  height: 48px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.loansList_Table thead tr:hover {
+  background-color: #f9f9f9 !important;
+}
+
+.loansList_Table.pipeline_table thead tr {
+  border-top: none;
+}
+
+.loansList_Table thead tr th {
+  color: #fff;
+  border: none !important;
+  padding: 0 14px 0 14px;
+font-size: 12px !important;
+}
+
+.loansList_Table thead tr th.loansList_TableActions {
+  width: 65px;
+  background-color: #000;
+  padding: 0;
+  text-align: center;
+  max-width: 65px;
+}
+
+.loansList_Table thead tr th.loansList_TableActions div>span>svg {
+  display: none;
+}
+
+.loansList_Table thead .sortActive,
+.loansList_Table thead .sorting_Label {
+  color: #202020;
+  line-height: 1.2em;
+}
+
+.loansList_Table._tableClosedLoanList thead tr th:nth-child(2) .sorting_Label,
+.loansList_Table._tableClosedLoanList thead tr th.user_TableActions .sorting_Label {
+
+}
+
+.loansList_Table._tableClosedLoanList thead tr th.user_TableActions .sorting_Label {
+  font-weight: 900;
+}
+
+.loansList_Table thead .sorting_Label svg {}
+
+.loansList_Table tbody {
+  background-color: #fff;
+}
+
+.loansList_Table tbody tr {
+  min-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.loansList_Table tbody tr td {
+  border: none;
+  color: black;
+  height: 57px;
+  padding: 0 14px 0 14px;
+  font-size: 14px;
+}
+
+.loansList_Table tbody tr td.loansList_TableActions {
+  width: 90px;
+  background-color: transparent;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loansList_Table tbody tr td.loansList_TableActions .button_TableActions,
+.loansList_Table tbody tr td.loansList_TableActions .button_TableActions {
+  flex: 1 0 0px;
+  justify-content: flex-end;
+  display: flex;
+  padding: 0;
+  height: 70px;
+  width: 30px;
+  min-width: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.loansList_Table tbody tr td.loansList_TableActions .button_TableActions._userEdit:hover {
+  background-color: #0f9ad6;
+}
+
+.loansList_Table tbody tr td.loansList_TableActions .button_TableActions._userDelete:hover {
+  background-color: #a93f3f;
+}
+
+.loansList_Table tbody tr td.loansList_TableActions svg {
+  margin: 0 auto;
+}
+
+.loansList_Table tbody tr td.loansList_TableActions svg path {
+  fill: #4b4b4b;
+}
+
+.loansList_Table tbody tr td.loansList_TableImage {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.loansList_Table tbody tr td.loansList_TableImage img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  float: left;
+}
+
+.loansList_Table tbody tr td.loansList_Link {
+  padding-left: 14px;
+}
+
+.loansList_Table tbody tr td.loansList_Link a {
+  color: #0f9ad6;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.loansList_Table tbody tr td.loansList_Link span {
+  display: flex;
+  color: #8c8c8c;
+  line-height: 120%;
+}
+
+.loansList_Table thead tr th:first-child {
+
+}
+
+.loansList_Table thead tr th:nth-child(2) {
+  padding-left: 14px;
+}
+
+.loansList_Table thead tr th.user_TableActions {
+  padding-right: 0;
+  padding-left: 0;
+  width: 70px;
+  text-align: center;
+}
+
+.loansList_Table thead tr th.user_TableActions._4Actions,
+.loansList_Table tbody tr td.loansList_TableActions._4Actions {
+  width: 120px;
+}
+
+.grid_addNewLoan {
+  padding: 5px 12px 0px !important;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.grid_addNewLoan .button_addNewLoan svg path {
+  fill: #fff;
+}
+
+.grid_addNewLoan .button_addNewLoan {
+  color: rgb(255, 255, 255);
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  min-width: 30px;
+  background: #55555f;
+}
+
+.tableOuterHeader {
+  height: 24px;
+  color: #4e4e4e;
+  display: inline-block;
+  width: 100%;
+  align-items: center;
+  padding: 0;
+  float: left;
+}
+
+#root .button_tableGridChanger {
+  padding: 0;
+  width: 30px;
+  min-width: 30px;
+  min-height: 50px;
+  height: 50px;
+}
+
+#root .headerActions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+#root .button_headerAction {
+  padding: 0;
+  width: 35px;
+  min-width: 35px;
+  height: 42px;
+}
+
+#root .button_trashIcon_Avps {
+  padding: 0;
+  width: 20px;
+  min-width: 24px;
+  height: 20px;
+  min-height: 20px;
+}
+
+#root .button_trashIcon_Avps>span {
+  width: 24px;
+  height: 20px;
+}
+
+#root .container_FormControlSelect {
+  padding-left: 15px;
+}
+
+#root .headerDashboard {
+  margin: 0;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#root .headerDashboard_List {
+  width: 100%;
+  transform: "translateZ(0)";
+}
+
+#root .headerDashboard_Title {
+  height: 120px;
+}
+
+#root .headerDashboard_TitleBar {
+  height: 120px;
+  text-align: center;
+  background: transparent;
+}
+
+#root .headerDashboard_TitleBar>div:first-child>div:first-child {
+  color: #0f9ad6;
+  font-size: 11px;
+  font-weight: bold;
+  position: relative;
+}
+
+#root .headerDashboard_TitleBar>div:first-child>div:first-child:after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #bdbdbd;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+#root .headerDashboard_TitleBar span {
+  color: #484848;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 12px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* LOANS DETAILS */
+
+.header_Striped {
+  background: repeating-linear-gradient(135deg, #454545, #454545 2px, #5b5b5b 2px, #5b5b5b 5px);
+  color: #fff;
+  min-height: 50px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  font-size: 24px;
+}
+
+.header_Striped h3 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.header_Striped_Left {
+  flex-direction: row;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+}
+
+#root .header_Striped_Left_Nav {
+  height: 48px;
+  padding: 8px 8px 8px 14px;
+  border-bottom: 2px solid #55555f;
+  border-radius: 0;
+  text-transform: none;
+}
+
+.header_Striped_Left button {
+  background: #fff;
+  /* height: 42px; */
+  color: #000;
+  /* font-size: 17px; */
+  /* padding: 8px 6px 8px 12px; */
+}
+
+.header_Striped_Right {
+  flex-direction: row;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+}
+
+.chipStatus {
+  height: 22px;
+  background: #000;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 22px;
+  padding: 0 11px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+
+#root .inContentTabs_Grid {
+  padding: 0;
+  background: #f1f2f2;
+  width: calc(100% - 28px);
+  margin: 0 14px;
+}
+
+.inContentTabs button[aria-selected="true"] {
+  font-weight: 900;
+}
+
+.inContentTabs button:hover span {
+  color: #55555f;
+}
+
+.inContentTabs button span {
+  color: #1d1d1d;
+  text-transform: none;
+}
+
+.inContentTabs>div>div>span {
+  background-color: #55555f;
+}
+
+/* _mezzLoan */
+
+#root ._mezzLoan {
+  background: #5b5b5b;
+}
+
+._mezzLoan button[aria-selected="true"] {
+  font-weight: 900;
+}
+
+._mezzLoan button:hover span {
+  color: #55555f;
+}
+
+._mezzLoan button span {
+  color: #f1f2f2;
+  text-transform: none;
+}
+
+._mezzLoan>div>div>span {
+  background-color: #55555f;
+}
+
+/* LOANS DETAILS TABS TABLE */
+
+#root .detailTabs_Grid {
+  padding: 0;
+  width: calc(100% - 28px);
+  margin: 0 14px;
+}
+
+#root .detailTabs_Grid .header_Striped_Left>div {
+  padding-bottom: 4px;
+}
+
+.detailTabs_header {
+  height: 36px;
+  color: #4e4e4e;
+  /* font-size: 17px; */
+  /*display: flex;*/
+  align-items: flex-end;
+  width: 100%;
+  padding: 0;
+  font-weight: 500;
+}
+
+.detailTabs_table {
+  border-top: 1px solid #0f9ad6;
+  margin-bottom: 10px;
+}
+
+.detailTabs_table thead {}
+
+.detailTabs_table thead tr {
+  min-height: 50px;
+  height: auto;
+}
+
+.detailTabs_table thead tr th {
+  padding: 15px 14px 5px 14px;
+  color: #202020;
+  font-weight: bold;
+}
+
+.detailTabs_table thead tr th:last-child {
+  padding-right: 14px;
+}
+
+.detailTabs_table tbody {}
+
+.detailTabs_table tbody tr {
+  min-height: 30px;
+  height: auto;
+}
+
+.detailTabs_table tbody tr td:first-child {
+  font-weight: bold;
+}
+
+.detailTabs_table tbody tr td {
+  padding: 5px 14px;
+  color: #202020;
+  font-weight: normal;
+  border-right: 1px solid rgba(224, 224, 224, 1);
+}
+
+.detailTabs_table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.detailTabs_table tbody tr td:last-child {
+  padding-right: 14px;
+  border-right: none;
+}
+
+/* LOANS DETAILS TABS TABLE EDIT FORM */
+
+.formStatus_editing .button_removeAvps {
+  padding: 0;
+  min-height: 24px;
+  min-width: 24px;
+  width: 100%;
+}
+
+.avps_tabsEditInput {}
+
+.datePickerFix>div>div {
+  margin-left: -48px;
+}
+
+#root .avps_FieldsTextarea {
+  margin: 0;
+}
+
+#root .avps_FieldsTextarea>div,
+.avps_tabsEditInput>div {
+  color: #202020;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+#root .avps_FieldsTextarea input,
+.avps_tabsEditInput input {
+  padding: 4px 0 5px;
+}
+
+#root .avps_FieldsTextarea input:disabled,
+.avps_tabsEditInput input:disabled {
+  color: #202020;
+}
+
+.detailTabs_header button {
+  border-radius: 0;
+}
+
+.detailTabs_Grid .button_loanSubCategory_Edit:hover {
+  background-color: #4fc3f7;
+}
+
+.detailTabs_Grid .button_loanSubCategory_Submit:hover {
+  background-color: #9ccc65;
+}
+
+.multiline textarea {
+  font-size: 1em;
+}
+
+/* edit state */
+
+form.formStatus_editing,
+form.formStatus_editing thead {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+form.formStatus_editing._on .detailTabs_table {
+  border-top: 1px solid #d2ecff;
+}
+
+form.formStatus_editing._on .detailTabs_table thead {
+  background: #d2ecff;
+}
+
+th {
+  white-space: nowrap;
+}
+
+/* BUTTONS */
+
+button.blackBtn {
+  background-color: #404040;
+  opacity: 1;
+  border: 0;
+  color: #fff;
+}
+
+button:disabled.blackBtn {
+  background-color: #404040;
+  opacity: 0.1;
+  border: 0;
+  color: #fff;
+}
+
+button:hover.blackBtn {
+  background-color: #404040;
+  opacity: 0.5;
+  border: 0;
+  color: #fff;
+}
+
+ul[role=listbox] {
+  min-height: auto;
+  height: 100%;
+  max-height: 160px;
+}
+
+div[role=document] {
+  box-shadow: 5px 10px 18px #888888;
+}
+
+td:first-letter {
+  text-transform: capitalize;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.zoomOut {
+  animation-name: zoomOut;
+}
+
+.animate {
+  animation-duration: 800ms;
+}
+
+/* NOTES */
+
+body .openNotesDialog {
+  justify-content: flex-end;
+}
+
+body .openNotesDialog div[role="document"] {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  max-height: 100%;
+  max-width: 50%;
+}
+
+#openNotesDialogTitle h2 {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  color: #606061;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#openNotesDialogTitle h2 svg {
+  margin-right: 10px;
+}
+
+/* DIVIDER */
+
+body .dividerBold {
+  height: 2px;
+  background-color: #000;
+}
+
+/* MOBILE MENU */
+
+.menu_DrawerMobile .button_menuTopPanelOpen,
+.menu_DrawerMobile .button_menuTopPanelClose {
+  background-color: #55555f;
+  border-radius: 0;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 0;
+}
+
+.menu_DrawerMobile .button_menuTopPanelClose:hover {
+  background-color: #55555f;
+}
+
+.button_menuTopPanelClose svg {
+  color: #fff;
+}
+
+.menu_LeftDrawerMobile {
+  height: 100%;
+  width: 250px;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu_DrawerMobileWrapper {
+  flex: 1 0 0;
+  justify-content: flex-start;
+  display: flex;
+  height: 100%;
+  background-color: #151515;
+}
+
+.menu_LeftDrawerMobile a {
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  transition: 0.3s;
+  position: relative;
+}
+
+.menu_LeftDrawerMobile a:hover {
+  color: #f1f1f1;
+}
+
+.menu_LeftDrawerMobile.active {
+  transform: translate(0, 0);
+}
+
+/* custom Material UI link style */
+
+.menu_LeftDrawerMobile .overrideMUI_linkItem {
+  padding: 0;
+}
+
+.menu_LeftDrawerMobile ul>.overrideMUI_linkItem {
+  padding: 12px 16px;
+}
+
+/* TOAST STYLES */
+
+/* .Toastify__toast {
+  align-items: flex-start;
+  background-color: #55555f;
+  border-radius: 4px;
+  color: #ffffff;
+  display: flex;
+  padding: 16px;
+}
+
+button.Toastify__close-button.Toastify__close-button--default {
+  font-size: 23px;
+  color: #fff;
+  background: transparent;
+  border: 0;
+}
+
+.Toastify__toast-body {
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.Toastify__toast {
+  bottom: 24px;
+  position: fixed;
+  right: 24px;
+  width: 240px;
+  z-index: 10000;
+} */
+
+li[data-value] {
+  text-transform: capitalize;
+}
+
+@media (max-width: 992px) {
+  #root .headerDashboard_TitleBar span {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  table._tableClosedLoanList,
+  table._tableUserList,
+  table._tableClosedFundList {
+    overflow-x: auto;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (max-width: 580px) {
+  #root .login_PanelInnerPaper {
+    box-shadow: none;
+  }
+
+  #root .login_PanelInnerPaper form {
+    padding: 0;
+  }
+
+  #root .headerDashboard_TitleBar span {
+    font-size: 17px;
+  }
+}
+
+
+.searchPopup {
+  position: absolute;
+  width: 280px;
+  top: 45px;
+  z-index: 2000;
+  padding: 16px 24px 24px;
+  background-color: white;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin-top: 5px;
+  color: black;
+  overflow-y: auto;
+}
+
+.searchPopup ul {
+  margin-top: 5px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.searchPopup li {
+  padding: 2px 16px;
+  font-size: 0.8rem;
+}
+
+.searchPopup li:hover {
+  background-color: #E5F2FB !important;
+}
+
+.searchPopup li:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.header {
+  font-weight: bold !important;
+  color: #606061 !important;
+}
+
+.loansList_Menu {
+  padding-top: 12px !important;
+  float: right;
+}
+
+th span[aria-label="More"]{
+  float:right;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* EnhancedTable */
+
+.enhancedTable {
+  border-collapse: separate !important;
+}
+
+.enhancedTable th {
+  background-color: #f9f9f9;
+  border-bottom: 3px solid #ccc !important;
+  z-index: 2000;
+}
+
+.enhancedTable th tr {
+  height: 40px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.enhancedTable thead tr:hover {
+  background-color: #f9f9f9 !important;
+}
+
+.enhancedTable thead tr th {
+  color: #fff;
+  border: none;
+  padding: 0 14px 0 14px;
+}
+
+.enhancedTable thead .sortActive,
+.enhancedTable thead .sorting_Label {
+  color: #202020;
+  line-height: 1.2em;
+}
+
+.enhancedTable thead .sorting_Label svg {}
+
+.enhancedTable tbody {
+  background-color: #fff;
+}
+
+.enhancedTable tbody tr {
+  min-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.enhancedTable tbody tr td {
+  border: none;
+  color: #606061;
+  padding: 0 14px 0 14px;
+}
+
+.enhancedTable thead tr th:first-child {}
+
+.enhancedTable thead tr th:nth-child(2) {
+  padding-left: 14px;
+}
+
+.loansList_Table.tableTextBlack thead tr th {
+  color: black;
+}
+
+.closingDateAssumed {
+  margin-left: 0px !important;
+}
+
+.selected {
+  color: blue;
+}
+
+#pdfReferenceDrawer > div:nth-child(2) {
+  width:1100px;
+}

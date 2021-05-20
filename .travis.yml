@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - '8'
+sudo: required
+services:
+  - docker
+cache:
+  yarn: true
+addons:
+  ssh_known_hosts: pensford.303-dev.com
+notifications:
+  slack: 303software:c5OIYjtNTlOIQCpnL5AFlZoX
+branches:
+  only:
+  - v0.15
+script:
+- echo 'Unit tests are currently disabled. G needs to do these.'
+after_success:
+- docker --version
+- pip install --user awscli
+- export PATH=$PATH:$HOME/.local/bin
+- sh buildECR.sh
+- openssl aes-256-cbc -K $encrypted_6e62ca65d82c_key -iv $encrypted_6e62ca65d82c_iv
+  -in deploy_rsa.enc -out /tmp/deploy_rsa -d
+- eval "$(ssh-agent -s)"
+- ssh-keyscan pensford.303-dev.com >> ~/.ssh/known_hosts
+- chmod 600 /tmp/deploy_rsa
+- ssh -i /tmp/deploy_rsa ubuntu@pensford.303-dev.com 'cd /home/ubuntu/resources/environments/pensford/ && ./updateEnvironment.sh'

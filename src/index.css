@@ -1,0 +1,125 @@
+:root{
+  --font-size-xxl:30px;
+  --font-size-xl:24px;
+  --font-size-l:20px;
+  --font-size-m:17px; /* <----- Primary Font*/
+  --font-size-s:15px; /* <----- Button Default*/
+  --font-size-xs:12px;
+  --shrunken-label:16px;
+ }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-display: fallback;
+  line-height: 1.4em;
+  font-weight: 500;
+  font-size: var(--font-size-m);
+ }
+ /* ----------  GLOBAL OVERRIDES ------------------- */
+
+textarea, ::placeholder{
+  font-size: var(--font-size-m) !important;
+ }
+
+.toggle-button{
+  font-size:var(--font-size-s);
+}
+
+.displayName{
+  font-size: var(--font-size-m);
+}
+
+.companyName{
+  padding-top: 5px;
+  font-size: var(--font-size-m);
+}
+
+ img[alt="thumbnailImg"]{
+  overflow: hidden;
+ }
+
+ label{
+  /* Applies globally to all labels - 100% width causes radios w/ flex-row to wrap to new line */
+  font-size: var(--font-size-m);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ }
+
+ label[data-shrink="true"]{
+  font-size: 21px ;
+  font-stretch: normal;
+  color:#999999;
+ }
+ 
+button, button span, button span span, button[tabindex] span span, button span div, .toggle-button{
+
+ }
+
+ a[role='button']{
+    font-size:var(--font-size-s);
+ }
+
+ .shrunken-label{
+  font-size: var(--shrunken-label) ;
+ }
+ 
+ #closed_deal_table, #sold_deal_table, td.loansList_Link{
+  min-width: 180px;
+ }
+
+ td.loansList_Link{
+  min-width: 300px;
+}
+
+tfoot div[role='button']{
+  padding-top: 3px;
+  margin-right: 6px;
+  margin-bottom: -7px;
+  font-size:var(--font-size-s) ;
+ }
+ 
+ tfoot span, tfoot div{
+  font-size:var(--font-size-s) ;
+ }
+
+ button[role='tab']{
+  font-size:var(--font-size-s);
+  text-transform: uppercase;
+ }
+ .title-component{
+  font-family: Work Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 14px;
+ }
+ .sub-title-component{
+  font-size: var(--font-size-l) ;
+ }
+
+.banner-metric{
+  padding-top: 4px;
+  font-size: var(--font-size-xxl);
+}
+
+textarea{ 
+  overflow-y:hidden;
+}
+
+.f-1 {
+  flex: 1;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}

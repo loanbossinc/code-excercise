@@ -1,0 +1,14 @@
+{
+    "firstName": "Test",
+    "lastName": "User",
+    "title": "Account Manager",
+    "jobFunction":"1",
+    "email": "christopherlaytondeveloper@gmail.com",
+    "phone": "(503) 724-9855",
+    "address":  {
+        "street": "14812 Heather Glen Dr",
+        "city": "Oregon City",
+        "state": "OR",
+        "zipcode": "97045"
+    }
+}

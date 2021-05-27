@@ -3,7 +3,7 @@ import LoadingIndicator from "components/LoadingIndicator";
 import PrivateRoute from "components/PrivateRoute";
 import TopNavigation from "components/TopNavigation";
 import Example from '../Example/example';
-import {ROUTE_APP_LANDING} from "constants/routes";
+import {ROUTE_APP_LANDING, ROUTE_PROFILE_UPDATE, ROUTE_CONTACT_UPDATE} from "constants/routes";
 import "material-icons-font/material-icons-font.css";
 import numeral from "numeral";
 import React, { Fragment } from "react";
@@ -16,6 +16,9 @@ import styled from "styled-components";
 import "typeface-space-mono";
 import "typeface-work-sans";
 import "./App.css";
+
+import ProfileUpdate from '../Example/ProfileUpdate';
+import ContactUpdate from '../Example/ContactUpdate';
 
 numeral.register("format", "phone", {
   regexps: {
@@ -38,7 +41,7 @@ numeral.register("format", "phone", {
       }
       return formatString;
     }
-
+    console.log("HERE");
     return format(value, formatString);
   }
 });
@@ -105,6 +108,8 @@ export class App extends React.Component {
                   <Route path="/" exact component={Home} />
 
                   <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_APP_LANDING} Component={Example} />
+                  <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_PROFILE_UPDATE} Component={ProfileUpdate} />
+                  <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_CONTACT_UPDATE} Component={ContactUpdate} />
 
                 </Switch>
               </div>

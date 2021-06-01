@@ -5,7 +5,7 @@ import { create } from 'jss';
 import { Provider } from "react-redux";
 import { createBrowserHistory } from "history";
 // Datepicker Provider
-import MuiPickersUtilsProvider from "material-ui-pickers/utils/MuiPickersUtilsProvider";
+import MuiPickersUtilsProvider from "material-ui-pickers/MuiPickersUtilsProvider";
 import MomentUtils from "material-ui-pickers/utils/moment-utils";
 import JssProvider from 'react-jss/lib/JssProvider';
 

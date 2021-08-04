@@ -1,7 +1,7 @@
 import React from 'react'
 import Flex from '../Global/PageOrganization/Flex'
 
-// My favorirt dropdown lib... Super clean UI
+// My favorite dropdown lib... Super clean UI
 import Select from 'react-select'
 
 export const EditableDropdown = (props) => {

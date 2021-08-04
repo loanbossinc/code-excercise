@@ -1,20 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { MuiThemeProvider, createMuiTheme, createGenerateClassName, jssPreset } from "@material-ui/core/styles";
-import { create } from 'jss';
 import { Provider } from "react-redux";
 import { createBrowserHistory } from "history";
 // Datepicker Provider
-import MuiPickersUtilsProvider from "material-ui-pickers/MuiPickersUtilsProvider";
-import MomentUtils from "material-ui-pickers/utils/moment-utils";
-import JssProvider from 'react-jss/lib/JssProvider';
+// import MomentUtils from "material-ui-pickers/utils/moment-utils";
 
 import createStore from "store";
+import "material-icons-font/material-icons-font.css";
 import App from "./components/App";
-import 'material-icons-font/material-icons-font.css';
 import "./index.css";
-
-import CacheBuster from "./CacheBuster";
 
 const history = createBrowserHistory();
 const store = createStore(history);
@@ -132,29 +127,23 @@ const theme = createMuiTheme({
   }
 });
 
-const generateClassName = createGenerateClassName({
-  productionPrefix: 'v1',
-});
+// Commenting this out since not needed for this exercise. - Roman C.
+// const generateClassName = createGenerateClassName({
+//   productionPrefix: 'v1',
+// });
 
-const Root = () => (
-  // eslint-disable-next-line
-  <CacheBuster>
-    {({ loading }) => {
-      if (loading) return null;
-      return (
-        <JssProvider jss={create(jssPreset())} generateClassName={generateClassName}>
-          <Provider store={store}>
-            <MuiThemeProvider theme={theme}>
-              <MuiPickersUtilsProvider utils={MomentUtils}>
-                <App history={history} />
-              </MuiPickersUtilsProvider>
-            </MuiThemeProvider>
-          </Provider>
-        </JssProvider>
-      );
-    }}
-  </CacheBuster>
-);
+const Root = () => {
+  return (// <JssProvider jss={create(jssPreset())} generateClassName={generateClassName}>
+    <Provider store={store}>
+      <MuiThemeProvider theme={theme}>
+        {/* <MuiPickersUtilsProvider utils={MomentUtils}> */}
+        <App history={history} />
+        {/* </MuiPickersUtilsProvider> */}
+      </MuiThemeProvider>
+    </Provider>
+    // </JssProvider>
+  )
+}
 
 ReactDOM.render(<Root />, document.getElementById("root"));
 

@@ -58,6 +58,11 @@ button, button span, button span span, button[tabindex] span span, button span d
 
  }
 
+ input {
+   outline: none;
+   border: none;
+ }
+
  a[role='button']{
     font-size:var(--font-size-s);
  }

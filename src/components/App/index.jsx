@@ -3,7 +3,9 @@ import LoadingIndicator from "components/LoadingIndicator";
 import PrivateRoute from "components/PrivateRoute";
 import TopNavigation from "components/TopNavigation";
 import Example from '../Example/example';
-import {ROUTE_APP_LANDING} from "constants/routes";
+import Personal from '../Example/editPersonal';
+import Contact from '../Example/editContact';
+import { ROUTE_APP_LANDING, ROUTE_EDIT_PERSONAL, ROUTE_EDIT_CONTACT } from "constants/routes";
 import "material-icons-font/material-icons-font.css";
 import numeral from "numeral";
 import React, { Fragment } from "react";
@@ -16,6 +18,7 @@ import styled from "styled-components";
 import "typeface-space-mono";
 import "typeface-work-sans";
 import "./App.css";
+import Flex from '../Global/PageOrganization/Flex';
 
 numeral.register("format", "phone", {
   regexps: {
@@ -73,7 +76,7 @@ export class App extends React.Component {
   }
 
   componentDidCatch(error) {
-    console.log("ERROR",error);
+    console.log("ERROR", error);
     this.setState({ hasError: true, error });
   }
 
@@ -98,18 +101,19 @@ export class App extends React.Component {
       <Router history={history}>
         <Fragment>
           <AppFlexContainer>
-            <LoadingIndicator loading={false} >
-              <TopNavigation />
-              <div className="mainContent" id="mainContent">
-                <Switch>
-                  <Route path="/" exact component={Home} />
+            {/* <LoadingIndicator loading={false} > */}
+            <TopNavigation />
+            <Flex className="mainContent" id="mainContent" style={{ flex: 1 }}>
+              <Switch>
+                <Route path="/" exact component={Home} />
 
-                  <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_APP_LANDING} Component={Example} />
+                <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_APP_LANDING} Component={Example} />
+                <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_EDIT_PERSONAL} Component={Personal} />
+                <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_EDIT_CONTACT} Component={Contact} />
 
-                </Switch>
-              </div>
-              <Spacer />
-            </LoadingIndicator>
+              </Switch>
+            </Flex>
+            {/* </LoadingIndicator> */}
           </AppFlexContainer>
           <ToastContainer closeButton={false} autoClose={2000} transition={Flip} />
         </Fragment>

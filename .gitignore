@@ -39,5 +39,4 @@ build.zip
 
 public/config.json
 deploy/k8s/public/pensford-app-deployment.yaml
-public/meta.json
-src/meta.json
+

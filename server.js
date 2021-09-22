@@ -8,22 +8,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(cors());
-
+app.options('*', cors());
 app.get("/me", (req, resp) => {
     fs.readFile("./data/user.json", 'utf8', (err, data) => {
         if(err) {
-            console.log("OH NO");
+            console.log(err);
         }
         let userData = JSON.parse(data);
-        fs.readFile("./data/jobfunction.json", 'utf8', (err,data) => {
-            if(err) {
-                console.log("OH NO BUT JOB FUNCTION");
-            }
-            let jobFunctionData = JSON.parse(data);
-            userData.jobFunction = jobFunctionData[userData.jobFunction];
+    
             resp.send(userData);
             return;
-        });
     });
 });
 

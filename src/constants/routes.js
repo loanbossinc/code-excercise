@@ -1,1 +1,1 @@
-export const ROUTE_APP_LANDING = "/example";
+export const ROUTE_APP_LANDING = "/profile";

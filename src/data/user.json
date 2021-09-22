@@ -1,0 +1,14 @@
+{
+    "user": {
+        "firstName": "Murphy",
+        "lastName": "Newell",
+        "role": "Dev",
+        "roleFunction": "Asset Manager",
+        "email": "murphy.newell@gmail.com",
+        "phone": "(123) 456-7890",
+        "street": "123 main st",
+        "city": "Atlanta",
+        "state": "Georgia",
+        "zipcode": "30303"
+    }
+}

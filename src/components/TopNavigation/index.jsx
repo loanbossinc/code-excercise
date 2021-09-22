@@ -177,6 +177,7 @@ export class MainTopNavigation extends Component {
                 <CenteringLink to="/example"><StyledImage src={Logo} id="homeLogo" className="App-logo" alt="logo" /></CenteringLink>
                 <HeaderContainerCenter>
                   {this.renderNavItem("Dashboard", "/example", false, null, this.props.location.pathname)}
+                  {this.renderNavItem("Profile", "/profile", false, null, this.props.location.pathname)}
                 </HeaderContainerCenter>
               </ItemGroup>
             </ToolbarButtonWrapper>

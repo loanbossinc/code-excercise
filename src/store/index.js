@@ -4,6 +4,7 @@ import createSagaMiddleware from "redux-saga";
 import { routerMiddleware } from "react-router-redux";
 import rootReducer from "./reducers";
 import rootSaga from "./sagas";
+import thunk from 'redux-thunk';
 
 export default function(history) {
   const sagaMiddleware = createSagaMiddleware();
@@ -11,7 +12,7 @@ export default function(history) {
   const composeEnhancers = composeWithDevTools({  trace: true, traceLimit: 25 });
   const store = createStore(
     rootReducer,
-    composeEnhancers(applyMiddleware(sagaMiddleware, router))
+    composeEnhancers(applyMiddleware(sagaMiddleware, router, thunk))
   );
   sagaMiddleware.run(rootSaga);
 

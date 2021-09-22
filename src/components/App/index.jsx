@@ -3,6 +3,8 @@ import LoadingIndicator from "components/LoadingIndicator";
 import PrivateRoute from "components/PrivateRoute";
 import TopNavigation from "components/TopNavigation";
 import Example from '../Example/example';
+import Profile from '../Profile/profile';
+import EditProfile from '../Profile/editProfile';
 import {ROUTE_APP_LANDING} from "constants/routes";
 import "material-icons-font/material-icons-font.css";
 import numeral from "numeral";
@@ -58,6 +60,7 @@ export class App extends React.Component {
     isInitial: true
   };
 
+
   componentDidMount() {
     console.log('componentDidMount');
     this.props.checkAuth();
@@ -103,7 +106,8 @@ export class App extends React.Component {
               <div className="mainContent" id="mainContent">
                 <Switch>
                   <Route path="/" exact component={Home} />
-
+                  <Route path="/profile" exact component={Profile} />
+                  <Route path="/profile/edit" exact component={EditProfile} />
                   <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_APP_LANDING} Component={Example} />
 
                 </Switch>

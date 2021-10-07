@@ -20,7 +20,6 @@
     "jwt-simple": "^0.5.1",
     "lodash": "^4.17.10",
     "material-icons-font": "^2.1.0",
-    "material-ui-pickers": "^1.0.0-rc.15",
     "moment": "^2.21.0",
     "moment-timezone": "^0.5.21",
     "normalizr": "^3.2.4",

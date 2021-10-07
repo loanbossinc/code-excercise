@@ -4,9 +4,6 @@ import { MuiThemeProvider, createMuiTheme, createGenerateClassName, jssPreset } 
 import { create } from 'jss';
 import { Provider } from "react-redux";
 import { createBrowserHistory } from "history";
-// Datepicker Provider
-import MuiPickersUtilsProvider from "material-ui-pickers/MuiPickersUtilsProvider";
-import MomentUtils from "material-ui-pickers/utils/moment-utils";
 import JssProvider from 'react-jss/lib/JssProvider';
 
 import createStore from "store";
@@ -145,9 +142,7 @@ const Root = () => (
         <JssProvider jss={create(jssPreset())} generateClassName={generateClassName}>
           <Provider store={store}>
             <MuiThemeProvider theme={theme}>
-              <MuiPickersUtilsProvider utils={MomentUtils}>
                 <App history={history} />
-              </MuiPickersUtilsProvider>
             </MuiThemeProvider>
           </Provider>
         </JssProvider>

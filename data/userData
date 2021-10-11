@@ -1,0 +1,14 @@
+{
+"firstName":"Kayley",
+"lastName":"Paris",
+"jobTitle":"Engineer",
+"jobFunction":"Software",
+"emailAddress":"email@address.com",
+"phoneAreaCode":"555",
+"phoneFirstThree":"867",
+"phoneLastFour":"5309",
+"street":"123 Sesame Street",
+"city":"Charlotte",
+"state":"NC",
+"zipCode":"00000"
+}

@@ -2,20 +2,19 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { compose } from "redux";
 import { withRouter } from "react-router";
+import UserProfile from "components/App/UserProfile";
 
 
 class Example extends Component {
-
-    render() {
-        console.log('HERE');
-        return (
-            <>
-                Example Page - Add Components Here
-            </>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <UserProfile />
+      </div>
+    );
+  }
 }
 
-const mapStateToProps = ({ }) => ({ });
+const mapStateToProps = ({}) => ({});
 
 export default compose(withRouter, connect(mapStateToProps, {}))(Example);

@@ -1,0 +1,152 @@
+.profile-edit-main-wrapper {
+  display: flex;
+
+  min-height: calc(100vh - 56px);
+  width: 100vw;
+
+  padding-bottom: 60px;
+}
+
+.profile-edit-main-wrapper .top-bg-img {
+  background: url("../../lib/images/bg-rect.png");
+  position: absolute;
+  height: 200px;
+  width: 100%;
+
+  z-index: 0;
+}
+
+.profile-edit-main-wrapper .right-col {
+  display: flex;
+
+  padding-top: 120px;
+
+  justify-content: center;
+
+  width: 40vw;
+
+  z-index: 1;
+}
+
+.profile-edit-main-wrapper .right-col .user-card {
+  width: 65%;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px;
+  margin-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-edit-main-wrapper .right-col .user-card .card-buttons {
+  border-radius: 5px;
+  height: 40px;
+  margin: 6px;
+  border: none;
+}
+
+.profile-edit-main-wrapper .right-col .user-card .card-buttons.save-button {
+  background-color: #0159a8;
+  color: white;
+}
+
+.profile-edit-main-wrapper .right-col .user-card .card-buttons.save-button:hover {
+  background-color: #0069c5;
+  cursor: pointer;
+}
+
+.profile-edit-main-wrapper .right-col .user-card .card-buttons.cancel-button {
+  color: #0159a8;
+  background-color: white;
+  border: 1px solid #0159a8;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.profile-edit-main-wrapper .right-col .user-card .card-buttons.cancel-button:hover {
+  color: #0159a8;
+  background-color: rgb(230, 230, 230);
+  cursor: pointer;
+}
+
+.profile-edit-main-wrapper .left-col {
+  display: flex;
+  flex-direction: column;
+
+  width: 60vw;
+
+  padding-top: 250px;
+
+  padding-left: 80px;
+  padding-right: 20px;
+
+  z-index: 1;
+}
+
+.profile-edit-main-wrapper .left-col .info-container {
+  margin-top: 20px;
+  box-shadow: 0px 0px 4px 4px #e6e6e6;
+
+  width: 80%;
+}
+
+.profile-edit-main-wrapper .field-wrapper {
+  border: 1px solid lightgray;
+  padding: 16px;
+}
+
+/* .profile-edit-main-wrapper .field-wrapper div:nth-child(1) {
+  width: 36%;
+}
+
+.profile-edit-main-wrapper .field-wrapper div:nth-child(2) {
+  width: 63%;
+} */
+
+.profile-edit-main-wrapper .field-wrapper.two-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+#user-profile-title {
+  background-color: #eeeeee;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.carrot-button {
+  margin-left: 12px;
+}
+
+.carrot-button:hover {
+  cursor: pointer;
+}
+
+.edit-details-button {
+  color: #0159a8;
+  border: 2px solid #0159a8;
+  background-color: transparent;
+  font-weight: bold;
+  height: 36px;
+  width: 40%;
+  text-align: center;
+  line-height: 34px;
+}
+
+.edit-details-button:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}

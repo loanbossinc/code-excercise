@@ -114,7 +114,7 @@ const StyledImage = styled.img` &&&{
 const LeftNavItem = ({ label, icon, link, callback, trailingIcon, pathName }) => {
   return (
 
-      <StyledNavListItem button component={Link} to={link} activeClassname="selected" onClick={callback}>
+      <StyledNavListItem button component={Link} to={link} className="selected" onClick={callback}>
         <FlexNav>
           {icon}
           {pathName === link && <BlueLink id={`leftNav-${label.toUpperCase()}`}>{label}</BlueLink>}
@@ -174,9 +174,10 @@ export class MainTopNavigation extends Component {
           <Toolbar classes={{ root: classes.toolbarRoot }} disableGutters>
             <ToolbarButtonWrapper>
               <ItemGroup>
-                <CenteringLink to="/example"><StyledImage src={Logo} id="homeLogo" className="App-logo" alt="logo" /></CenteringLink>
+                <CenteringLink to="/"><StyledImage src={Logo} id="homeLogo" className="App-logo" alt="logo" /></CenteringLink>
                 <HeaderContainerCenter>
-                  {this.renderNavItem("Dashboard", "/example", false, null, this.props.location.pathname)}
+                  {this.renderNavItem("Dashboard", "/", false, null, this.props.location.pathname)}
+                  {this.renderNavItem("User Profile", "/profile", false, null, this.props.location.pathname)}
                 </HeaderContainerCenter>
               </ItemGroup>
             </ToolbarButtonWrapper>

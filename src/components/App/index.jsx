@@ -1,9 +1,11 @@
 import Home from "components/Home";
+import UserProfile from 'components/UserProfile/index';
+import UserProfileEdit from 'components/UserProfileEdit/index';
+import ContactInfoEdit from 'components/ContactInfoEdit/index';
 import LoadingIndicator from "components/LoadingIndicator";
 import PrivateRoute from "components/PrivateRoute";
 import TopNavigation from "components/TopNavigation";
 import Example from '../Example/example';
-import {ROUTE_APP_LANDING} from "constants/routes";
 import "material-icons-font/material-icons-font.css";
 import numeral from "numeral";
 import React, { Fragment } from "react";
@@ -16,6 +18,11 @@ import styled from "styled-components";
 import "typeface-space-mono";
 import "typeface-work-sans";
 import "./App.css";
+
+import {ROUTE_APP_LANDING} from "constants/routes";
+import {ROUTE_USER_PROFILE} from "constants/routes";
+import {ROUTE_USER_PROFILE_EDIT} from "constants/routes";
+import {ROUTE_USER_CONTACT_INFO_EDIT} from "constants/routes";
 
 numeral.register("format", "phone", {
   regexps: {
@@ -102,9 +109,11 @@ export class App extends React.Component {
               <TopNavigation />
               <div className="mainContent" id="mainContent">
                 <Switch>
-                  <Route path="/" exact component={Home} />
+                  <Route path="/" exact component={UserProfile} />
 
-                  <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_APP_LANDING} Component={Example} />
+                  <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_USER_PROFILE} Component={UserProfile} />
+                  <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_USER_PROFILE_EDIT} Component={UserProfileEdit} />
+                  <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_USER_CONTACT_INFO_EDIT} Component={ContactInfoEdit} />
 
                 </Switch>
               </div>

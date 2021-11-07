@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { compose } from "redux";
-import { Paper, Grid, Button } from "@material-ui/core";
+import { Grid, Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import InputIcon from "@material-ui/icons/Input";
 import {ROUTE_APP_LANDING} from 'constants/routes';
 
-const LoginLink = props => <Link to="/login" {...props} />;
+const LoginLink = props => <Link to="/" {...props} />;
 
 class Home extends Component {
   state = {
@@ -22,11 +22,8 @@ class Home extends Component {
       <Fragment>
         <Grid className="login_Panel" container spacing={24}>
           <Grid item xs={12} className="login_PanelInner">
-            <Paper
-              className={`login_PanelInnerPaper shouldAnimate ${
-                this.state.animate ? "animateDownFadeIn" : ""
-              }`}
-            >
+
+              {/* I didn't really understand that the Paper comp was supposed to do. Removed it */}
               <div className="homePage_wrapper">
                 <div className="homePage_inner">
                   <Button
@@ -38,7 +35,6 @@ class Home extends Component {
                   </Button>
                 </div>
               </div>
-            </Paper>
           </Grid>
         </Grid>
       </Fragment>

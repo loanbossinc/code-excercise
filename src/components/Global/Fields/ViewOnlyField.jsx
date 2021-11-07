@@ -5,7 +5,6 @@ import masks from "lib/masks";
 
 const StyledTextField = styled.div`
   font-size: 17px;
-  font-weidth:bold;
   height:35px;
   color:black;
   text-align:left;
@@ -17,11 +16,11 @@ const StyledTextField = styled.div`
 
 const ViewOnlyField = props => {
   // Seems to be a bug in conformToMask when applying masks directly to decimal + percentage filters: see https://stackoverflow.com/questions/43793021/how-to-format-percent-with-decimal-using-angular2-createnumbermask-from-text-mas
-  const mask = props.mask && props.value ? masks[props.mask](String(props.value)).filter((val) => val != '[]') : false;
+  const mask = props.mask && props.value ? masks[props.mask](String(props.value)).filter((val) => val !== '[]') : false;
   const val = mask ? conformToMask(String(props.value), mask, {guide:false}).conformedValue : props.value || `--`;
-  const displayValue = props.placeholder || val;
+  const displayValue = val || props.placeholder ;
 
-  return <StyledTextField>{displayValue}</StyledTextField>;
+  return <StyledTextField style={props.bold ? {fontWeight: 'bold'} : {}}>{displayValue}</StyledTextField>;
 };
 
 export default ViewOnlyField;

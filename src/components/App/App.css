@@ -2,48 +2,63 @@
 
 @font-face {
   font-family: "Futura";
-  src: url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+  src: url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
+      format("opentype");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Futura";
-  src: url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+  src: url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("opentype");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Futura";
-  src: url("https://use.typekit.net/af/053fc9/00000000000000003b9af1e4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/053fc9/00000000000000003b9af1e4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/053fc9/00000000000000003b9af1e4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  src: url("https://use.typekit.net/af/053fc9/00000000000000003b9af1e4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/053fc9/00000000000000003b9af1e4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/053fc9/00000000000000003b9af1e4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("opentype");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../../lib/fonts/Roboto-Regular.ttf') format('truetype'), url("../../lib/fonts/Roboto-Regular.woff") format("woff"), url("../../lib/fonts/Roboto-Regular.svg") format("svg");
+  font-family: "Roboto";
+  src: url("../../lib/fonts/Roboto-Regular.ttf") format("truetype"), url("../../lib/fonts/Roboto-Regular.woff") format("woff"),
+    url("../../lib/fonts/Roboto-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../../lib/fonts/Roboto-Bold.ttf') format('truetype'), url("../../lib/fonts/Roboto-Bold.woff") format("woff"), url("../../lib/fonts/Roboto-Bold.svg") format("svg");
+  font-family: "Roboto";
+  src: url("../../lib/fonts/Roboto-Bold.ttf") format("truetype"), url("../../lib/fonts/Roboto-Bold.woff") format("woff"),
+    url("../../lib/fonts/Roboto-Bold.svg") format("svg");
   font-weight: bold;
   font-style: normal;
 }
 
-
 @font-face {
-  font-family: 'Roboto';
-  src: url('../../lib/fonts/Roboto-Medium.ttf') format('truetype'), url("../../lib/fonts/Roboto-Medium.woff") format("woff"), url("../../lib/fonts/Roboto-Medium.svg") format("svg");
+  font-family: "Roboto";
+  src: url("../../lib/fonts/Roboto-Medium.ttf") format("truetype"), url("../../lib/fonts/Roboto-Medium.woff") format("woff"),
+    url("../../lib/fonts/Roboto-Medium.svg") format("svg");
   font-weight: 300;
   font-style: normal;
 }
-
-
 
 html {
   background-color: #f5f5f5;
@@ -53,12 +68,12 @@ body {
   background-color: #fff;
 }
 
-#root {  
+#root {
   display: inline-block;
-  width: 100%;  
+  width: 100%;
   overflow: auto;
   position: absolute;
-  height:100%;
+  height: 100%;
   left: 0;
   top: 0;
   background-color: #f5f5f5;
@@ -122,7 +137,7 @@ td#image {
 
 h3 {
   font-size: 17px;
-  color: #606061;  
+  color: #606061;
   font-weight: 900;
 }
 
@@ -142,17 +157,13 @@ h3 {
   fill: #000;
 }
 
-.bluebutton{
-
-}
-
 #root .button_40x40 {
   width: 40px;
   height: 40px;
   min-width: 40px;
   min-height: 40px;
   padding: 0;
-  background: #005AA9;
+  background: #005aa9;
   border-radius: 89px;
   margin-top: 6px;
   color: #fff;
@@ -164,13 +175,13 @@ h3 {
 
 .error-text {
   color: red;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 100;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 #root .welcome_loginButton {
-  background-color: #005AA9;
+  background-color: #005aa9;
   color: #fff;
   border-radius: 0;
   box-shadow: none;
@@ -197,7 +208,7 @@ h3 {
   overflow: hidden;
   top: 0;
   left: 0;
-  background: url("../../lib/images/background-overlay.png"), linear-gradient(135deg, #111111 0%, #333333 100%);
+  /* background: url("../../lib/images/background-overlay.png"), linear-gradient(135deg, #111111 0%, #333333 100%); */
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -254,7 +265,7 @@ form .snackbarContentSuccess {
 .Splash-logo {
   width: 95%;
   max-width: 1025px;
-  height: auto;  
+  height: auto;
 }
 
 /* If the screen size is 601px wide or more*/
@@ -275,9 +286,7 @@ form .snackbarContentSuccess {
   height: 24px;
   margin: 15px;
 }
-.App-logo {
 
-}
 .Guest-App-logo {
   width: 70px;
   margin-top: 20px;
@@ -366,7 +375,7 @@ form .snackbarContentSuccess {
   padding: 0;
 }
 
-.menu_LeftDrawer ul>.overrideMUI_linkItem {
+.menu_LeftDrawer ul > .overrideMUI_linkItem {
   padding: 12px 16px;
 }
 
@@ -441,7 +450,7 @@ form .snackbarContentSuccess {
   fill: #fff;
 }
 
-.menu_TopPanel .buttonUserSettings>span {
+.menu_TopPanel .buttonUserSettings > span {
   text-transform: none;
   display: flex;
   align-items: left;
@@ -461,7 +470,7 @@ form .snackbarContentSuccess {
   display: none;
 }
 
-.menu_TopPanel .buttonUserSettings>span span {
+.menu_TopPanel .buttonUserSettings > span span {
   font-size: 10px;
   font-weight: normal;
 }
@@ -483,7 +492,7 @@ form .snackbarContentSuccess {
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  height:100%;
+  height: 100%;
 }
 
 /* -------------------------------------------------------------------- */
@@ -497,7 +506,7 @@ form .snackbarContentSuccess {
 /* --- TABLE BLUE HOVER --- */
 
 .tableBlueHover tbody tr:hover {
-  background-color: #E5F2FB !important;
+  background-color: #e5f2fb !important;
 }
 
 .tableBlueHover button:hover path {
@@ -533,7 +542,7 @@ form .snackbarContentSuccess {
   max-width: 70px;
 }
 
-.loansList_Table thead tr th.user_TableActions div>span>svg {
+.loansList_Table thead tr th.user_TableActions div > span > svg {
   display: none;
 }
 
@@ -623,7 +632,7 @@ form .snackbarContentSuccess {
   text-decoration: none;
 }
 
-.dialog_UpdateUser>div {
+.dialog_UpdateUser > div {
   max-width: 100%;
   height: calc(100%);
   width: calc(100%);
@@ -637,7 +646,7 @@ form .snackbarContentSuccess {
 
 /* Default */
 
-.dialog_default90>div {
+.dialog_default90 > div {
   max-width: 100%;
   height: calc(100%);
   width: calc(100%);
@@ -807,19 +816,19 @@ form .snackbarContentSuccess {
 
 /* USER SNACKBAR */
 
-.snackbar_user_deleted>div {
+.snackbar_user_deleted > div {
   background-color: rgb(156, 48, 40);
 }
 
-.snackbar_user_added>div {
+.snackbar_user_added > div {
   background-color: rgb(73, 138, 62);
 }
 
-.snackbar_user_updated>div {
+.snackbar_user_updated > div {
   background-color: rgb(52, 90, 117);
 }
 
-.snackbar_user_deleted>div>span {
+.snackbar_user_deleted > div > span {
   font-size: 17px;
   line-height: 120%;
   font-weight: 300;
@@ -832,20 +841,19 @@ form .snackbarContentSuccess {
 /* LOANS LIST */
 
 .loansList_Table thead {
-  background-color: #FAFAFA;
-  border-bottom: 1px solid #DADCE0;
+  background-color: #fafafa;
+  border-bottom: 1px solid #dadce0;
   /* Work Sans / 14 Medium */
-font-family: Work Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 12px !important;
-line-height: 14px;
-height: 48px;
-/* Text / Black */
-color: #000000;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px !important;
+  line-height: 14px;
+  height: 48px;
+  /* Text / Black */
+  color: #000000;
 
-text-transform: uppercase;
-
+  text-transform: uppercase;
 }
 
 .loansList_Table thead tr {
@@ -865,7 +873,7 @@ text-transform: uppercase;
   color: #fff;
   border: none !important;
   padding: 0 14px 0 14px;
-font-size: 12px !important;
+  font-size: 12px !important;
 }
 
 .loansList_Table thead tr th.loansList_TableActions {
@@ -876,7 +884,7 @@ font-size: 12px !important;
   max-width: 65px;
 }
 
-.loansList_Table thead tr th.loansList_TableActions div>span>svg {
+.loansList_Table thead tr th.loansList_TableActions div > span > svg {
   display: none;
 }
 
@@ -886,16 +894,16 @@ font-size: 12px !important;
   line-height: 1.2em;
 }
 
-.loansList_Table._tableClosedLoanList thead tr th:nth-child(2) .sorting_Label,
+/* .loansList_Table._tableClosedLoanList thead tr th:nth-child(2) .sorting_Label,
 .loansList_Table._tableClosedLoanList thead tr th.user_TableActions .sorting_Label {
 
-}
+} */
 
 .loansList_Table._tableClosedLoanList thead tr th.user_TableActions .sorting_Label {
   font-weight: 900;
 }
 
-.loansList_Table thead .sorting_Label svg {}
+/* .loansList_Table thead .sorting_Label svg {} */
 
 .loansList_Table tbody {
   background-color: #fff;
@@ -982,9 +990,9 @@ font-size: 12px !important;
   line-height: 120%;
 }
 
-.loansList_Table thead tr th:first-child {
+/* .loansList_Table thead tr th:first-child {
 
-}
+} */
 
 .loansList_Table thead tr th:nth-child(2) {
   padding-left: 14px;
@@ -1029,7 +1037,6 @@ font-size: 12px !important;
   width: 100%;
   align-items: center;
   padding: 0;
-  float: left;
 }
 
 #root .button_tableGridChanger {
@@ -1063,7 +1070,7 @@ font-size: 12px !important;
   min-height: 20px;
 }
 
-#root .button_trashIcon_Avps>span {
+#root .button_trashIcon_Avps > span {
   width: 24px;
   height: 20px;
 }
@@ -1094,14 +1101,14 @@ font-size: 12px !important;
   background: transparent;
 }
 
-#root .headerDashboard_TitleBar>div:first-child>div:first-child {
+#root .headerDashboard_TitleBar > div:first-child > div:first-child {
   color: #0f9ad6;
   font-size: 11px;
   font-weight: bold;
   position: relative;
 }
 
-#root .headerDashboard_TitleBar>div:first-child>div:first-child:after {
+#root .headerDashboard_TitleBar > div:first-child > div:first-child:after {
   content: "";
   width: 30px;
   height: 2px;
@@ -1205,7 +1212,7 @@ font-size: 12px !important;
   text-transform: none;
 }
 
-.inContentTabs>div>div>span {
+.inContentTabs > div > div > span {
   background-color: #55555f;
 }
 
@@ -1228,7 +1235,7 @@ font-size: 12px !important;
   text-transform: none;
 }
 
-._mezzLoan>div>div>span {
+._mezzLoan > div > div > span {
   background-color: #55555f;
 }
 
@@ -1240,7 +1247,7 @@ font-size: 12px !important;
   margin: 0 14px;
 }
 
-#root .detailTabs_Grid .header_Striped_Left>div {
+#root .detailTabs_Grid .header_Striped_Left > div {
   padding-bottom: 4px;
 }
 
@@ -1260,7 +1267,7 @@ font-size: 12px !important;
   margin-bottom: 10px;
 }
 
-.detailTabs_table thead {}
+/* .detailTabs_table thead {} */
 
 .detailTabs_table thead tr {
   min-height: 50px;
@@ -1277,7 +1284,7 @@ font-size: 12px !important;
   padding-right: 14px;
 }
 
-.detailTabs_table tbody {}
+/* .detailTabs_table tbody {} */
 
 .detailTabs_table tbody tr {
   min-height: 30px;
@@ -1313,9 +1320,9 @@ font-size: 12px !important;
   width: 100%;
 }
 
-.avps_tabsEditInput {}
+/* .avps_tabsEditInput {} */
 
-.datePickerFix>div>div {
+.datePickerFix > div > div {
   margin-left: -48px;
 }
 
@@ -1323,8 +1330,8 @@ font-size: 12px !important;
   margin: 0;
 }
 
-#root .avps_FieldsTextarea>div,
-.avps_tabsEditInput>div {
+#root .avps_FieldsTextarea > div,
+.avps_tabsEditInput > div {
   color: #202020;
   font-size: 10px;
   font-weight: normal;
@@ -1402,13 +1409,13 @@ button:hover.blackBtn {
   color: #fff;
 }
 
-ul[role=listbox] {
+ul[role="listbox"] {
   min-height: auto;
   height: 100%;
   max-height: 160px;
 }
 
-div[role=document] {
+div[role="document"] {
   box-shadow: 5px 10px 18px #888888;
 }
 
@@ -1552,7 +1559,7 @@ body .dividerBold {
   padding: 0;
 }
 
-.menu_LeftDrawerMobile ul>.overrideMUI_linkItem {
+.menu_LeftDrawerMobile ul > .overrideMUI_linkItem {
   padding: 12px 16px;
 }
 
@@ -1598,7 +1605,6 @@ li[data-value] {
 }
 
 @media (max-width: 768px) {
-
   table._tableClosedLoanList,
   table._tableUserList,
   table._tableClosedFundList {
@@ -1621,7 +1627,6 @@ li[data-value] {
     font-size: 17px;
   }
 }
-
 
 .searchPopup {
   position: absolute;
@@ -1649,7 +1654,7 @@ li[data-value] {
 }
 
 .searchPopup li:hover {
-  background-color: #E5F2FB !important;
+  background-color: #e5f2fb !important;
 }
 
 .searchPopup li:nth-child(odd) {
@@ -1666,8 +1671,8 @@ li[data-value] {
   float: right;
 }
 
-th span[aria-label="More"]{
-  float:right;
+th span[aria-label="More"] {
+  float: right;
 }
 
 /* -------------------------------------------------------------------- */
@@ -1705,7 +1710,7 @@ th span[aria-label="More"]{
   line-height: 1.2em;
 }
 
-.enhancedTable thead .sorting_Label svg {}
+/* .enhancedTable thead .sorting_Label svg {} */
 
 .enhancedTable tbody {
   background-color: #fff;
@@ -1722,7 +1727,7 @@ th span[aria-label="More"]{
   padding: 0 14px 0 14px;
 }
 
-.enhancedTable thead tr th:first-child {}
+/* .enhancedTable thead tr th:first-child {} */
 
 .enhancedTable thead tr th:nth-child(2) {
   padding-left: 14px;
@@ -1741,5 +1746,5 @@ th span[aria-label="More"]{
 }
 
 #pdfReferenceDrawer > div:nth-child(2) {
-  width:1100px;
+  width: 1100px;
 }

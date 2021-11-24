@@ -1,0 +1,12 @@
+{
+    "firstName": "John",
+    "lastName" : "Doe",
+    "title": "Manager",
+    "jobFunction": "Manage the Assets",
+    "email": "johndoe@email.com",
+    "phone": "(316) 332-2332",
+    "state": "NY",
+    "city" : "New York",
+    "zipCode" : "12232",
+    "street" : "123 Sunny Street"
+}

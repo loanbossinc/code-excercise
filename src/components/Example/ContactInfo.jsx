@@ -22,7 +22,7 @@ function ContactInfo(props) {
         </TitleItem>
         <InfoCell>
           <CellLable>NAME</CellLable>
-          <FetchedUserInfo>{props.userName}</FetchedUserInfo>
+          <FetchedUserInfo>{props.userFirstName} {props.userLastName}</FetchedUserInfo>
         </InfoCell>
         <InfoCell>
           <CellLable>TITLE</CellLable>

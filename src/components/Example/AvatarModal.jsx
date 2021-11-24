@@ -55,7 +55,7 @@ function AvatarModal(props){
                 </ContentContainer>
                 <ContentContainer>
                     <Name>
-                        {props.name}
+                        {props.firstName} {props.lastName}
                     </Name>
                 </ContentContainer>
                 <ContentContainer>

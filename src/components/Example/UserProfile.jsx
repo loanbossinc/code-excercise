@@ -70,14 +70,18 @@ function UserProfile(props) {
     return(
     <ContentContainer>
      <ContactInfo
-         userName={props.user.name}
+         userFirstName={props.user.firstName}
+         userLastName={props.user.lastName}
          userTitle={props.user.title}
-         userFunction={props.user.function}
+         userFunction={props.user.jobFunction}
      />
      <PersonalInfo
          userEmail={props.user.email}
-         userPhoneNumber={props.user.phoneNumber}
-         userAddress={props.user.address}
+         userPhoneNumber={props.user.phone}
+         userStreet={props.user.street}
+         userCity={props.user.city}
+         userState={props.user.state}
+         userZipCode={props.user.zipCode}
      />
 
     </ContentContainer>);

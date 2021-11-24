@@ -9,7 +9,11 @@ import {
     EditButton  
 } from "./UserProfile";
 
+
 function PersonalInfo(props) {
+
+    const address = `${props.userStreet}, ${props.userCity} ${props.userState}, ${props.userZipCode}`
+
     return(
         <InfoContainer>
             <TitleItem>
@@ -26,7 +30,7 @@ function PersonalInfo(props) {
             </InfoCell>
             <InfoCell>
             <CellLable>ADDRESS</CellLable>
-            <FetchedUserInfo>{props.userAddress}</FetchedUserInfo>
+            <FetchedUserInfo>{address}</FetchedUserInfo>
             </InfoCell>
         </InfoContainer>);
 }

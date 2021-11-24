@@ -5,6 +5,7 @@ import { withRouter } from "react-router";
 import styled from "styled-components";
 import AvatarModal from "./AvatarModal";
 import UserProfile from "./UserProfile";
+import { tsMethodSignature } from "@babel/types";
 
 
 const PageContainer = styled.div`
@@ -33,14 +34,7 @@ const Banner = styled.img`
 const defaultImageUrl = `/images/default-banner.png`;
 const defaultAvatarImg = `/images/loanBossLogoLight.png`;
 
-const user = {
-    name: "John Doe",
-    title: "Manager",
-    function: "Manage the Assets",
-    email: "johndoe@email.com",
-    phoneNumber: "(316) 332-2332",
-    address: "123 Sunny Street, New York, NY 12232"
-}
+
 
 
 class UserPage extends Component {
@@ -48,9 +42,41 @@ class UserPage extends Component {
     constructor(props){
         super(props);
         this.state = {
-            image: defaultAvatarImg
+            image: defaultAvatarImg,
+            user: {
+                firstName: "",
+                lastName: "",
+                title: "",
+                jobFunction: "",
+                email: "",
+                phone: "",
+                state: "",
+                city: "",
+                zipCode: "",
+                street: ""
+            }
         }
     }
+
+    componentDidMount() {
+        fetch('http://localhost:8080/me', {
+            method: 'GET',
+            mode: 'cors',
+            headers: {
+              'Content-Type': 'application/json',
+            }
+          })
+          .then(response => response.json())
+          .then(data => {
+            this.setState({
+                user: data
+            })
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+    }
+
 
     render() {
         return (
@@ -64,10 +90,11 @@ class UserPage extends Component {
                 <ContentContainer>
                 <AvatarModal
                     image={this.state.image}
-                    name={user.name}
+                    firstName={this.state.user.firstName}
+                    lastName={this.state.user.lastName}
                 />
                 <UserProfile
-                    user={user}
+                    user={this.state.user}
                 />
                 </ContentContainer>
                 

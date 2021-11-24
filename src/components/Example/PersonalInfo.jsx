@@ -8,17 +8,17 @@ import {
     FetchedUserInfo,
     EditButton  
 } from "./UserProfile";
-
+import {withRouter} from 'react-router-dom';
 
 function PersonalInfo(props) {
 
-    const address = `${props.userStreet}, ${props.userCity} ${props.userState}, ${props.userZipCode}`
+    const address = `${props.userStreet}, ${props.userCity}, ${props.userState} ${props.userZipCode}`
 
     return(
         <InfoContainer>
             <TitleItem>
                 <MainTitle>Personal Information</MainTitle>
-                <EditButton>Edit Details</EditButton>
+                <EditButton onClick={() => props.history.push("/edit-personal-information")}>Edit Details</EditButton>
             </TitleItem>
             <InfoCell>
             <CellLable>EMAIL</CellLable>
@@ -35,4 +35,4 @@ function PersonalInfo(props) {
         </InfoContainer>);
 }
 
-export default PersonalInfo;
+export default withRouter(PersonalInfo);

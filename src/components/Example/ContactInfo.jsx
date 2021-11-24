@@ -8,7 +8,7 @@ import {
     FetchedUserInfo,
     EditButton  
 } from "./UserProfile";
-
+import {withRouter} from 'react-router-dom';
 
 function ContactInfo(props) {
     return(
@@ -18,7 +18,7 @@ function ContactInfo(props) {
         </TitleItem>
         <TitleItem>
             <MainTitle>Contact Information</MainTitle>
-            <EditButton>Edit Details</EditButton>
+            <EditButton onClick={() => props.history.push("/edit-contact-information")}>Edit Details</EditButton>
         </TitleItem>
         <InfoCell>
           <CellLable>NAME</CellLable>
@@ -37,4 +37,4 @@ function ContactInfo(props) {
     );
 }
 
-export default ContactInfo;
+export default withRouter(ContactInfo);

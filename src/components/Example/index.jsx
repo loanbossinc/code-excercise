@@ -5,7 +5,6 @@ import { withRouter } from "react-router";
 import styled from "styled-components";
 import AvatarModal from "./AvatarModal";
 import UserProfile from "./UserProfile";
-import { tsMethodSignature } from "@babel/types";
 
 
 const PageContainer = styled.div`
@@ -76,6 +75,8 @@ class UserPage extends Component {
             console.error('Error:', error);
           });
     }
+
+
 
 
     render() {

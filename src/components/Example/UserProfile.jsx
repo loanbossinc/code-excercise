@@ -74,6 +74,7 @@ function UserProfile(props) {
          userLastName={props.user.lastName}
          userTitle={props.user.title}
          userFunction={props.user.jobFunction}
+         onEdit={props.onEditContactInfo}
      />
      <PersonalInfo
          userEmail={props.user.email}
@@ -82,6 +83,7 @@ function UserProfile(props) {
          userCity={props.user.city}
          userState={props.user.state}
          userZipCode={props.user.zipCode}
+         onEdit={props.onEditPersonalInfo}
      />
 
     </ContentContainer>);

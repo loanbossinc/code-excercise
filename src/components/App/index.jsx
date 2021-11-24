@@ -2,7 +2,7 @@ import Home from "components/Home";
 import LoadingIndicator from "components/LoadingIndicator";
 import PrivateRoute from "components/PrivateRoute";
 import TopNavigation from "components/TopNavigation";
-import UserPage from '../Example/userPage';
+import UserPage from 'components/Example/index';
 import {ROUTE_APP_LANDING} from "constants/routes";
 import "material-icons-font/material-icons-font.css";
 import numeral from "numeral";
@@ -16,6 +16,8 @@ import styled from "styled-components";
 import "typeface-space-mono";
 import "typeface-work-sans";
 import "./App.css";
+import EditPersonalPage from "components/Example/EditScreens/EditPersonalPage";
+import EditContactPage from "components/Example/EditScreens/EditContactPage";
 
 numeral.register("format", "phone", {
   regexps: {
@@ -105,6 +107,8 @@ export class App extends React.Component {
                   <Route path="/" exact component={Home} />
 
                   <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_APP_LANDING} Component={UserPage} />
+                  <Route path="/edit-contact-information" render={(props) => <EditContactPage{...props}/>}/>
+                  <Route path="/edit-personal-information" render={(props) => <EditPersonalPage{...props}/>}/>
 
                 </Switch>
               </div>

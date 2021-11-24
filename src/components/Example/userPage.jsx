@@ -4,7 +4,7 @@ import { compose } from "redux";
 import { withRouter } from "react-router";
 import styled from "styled-components";
 import AvatarModal from "./AvatarModal";
-import UserInformation from "./PersonalInfo";
+import UserProfile from "./UserProfile";
 
 
 const PageContainer = styled.div`
@@ -19,10 +19,9 @@ const ContentContainer = styled.div`
     margin-top: 150px;
     display: flex;
     flex-direction: row;
-    column-gap: 30px;
-    height: 800px;
+    column-gap: 50px;
+    margin-bottom: 30px;
 `;
-
 
 const Banner = styled.img`
     position: absolute;
@@ -33,6 +32,15 @@ const Banner = styled.img`
 `;
 const defaultImageUrl = `/images/default-banner.png`;
 const defaultAvatarImg = `/images/loanBossLogoLight.png`;
+
+const user = {
+    name: "John Doe",
+    title: "Manager",
+    function: "Manage the Assets",
+    email: "johndoe@email.com",
+    phoneNumber: "(316) 332-2332",
+    address: "123 Sunny Street, New York, NY 12232"
+}
 
 
 class UserPage extends Component {
@@ -56,8 +64,11 @@ class UserPage extends Component {
                 <ContentContainer>
                 <AvatarModal
                     image={this.state.image}
+                    name={user.name}
                 />
-                <UserInformation></UserInformation>
+                <UserProfile
+                    user={user}
+                />
                 </ContentContainer>
                 
             </PageContainer>

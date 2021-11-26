@@ -33,9 +33,6 @@ const Banner = styled.img`
 const defaultImageUrl = `/images/default-banner.png`;
 const defaultAvatarImg = `/images/loanBossLogoLight.png`;
 
-
-
-
 class UserPage extends Component {
 
     constructor(props){
@@ -75,9 +72,6 @@ class UserPage extends Component {
             console.error('Error:', error);
           });
     }
-
-
-
 
     render() {
         return (

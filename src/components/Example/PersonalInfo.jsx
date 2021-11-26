@@ -11,28 +11,30 @@ import {
 import {withRouter} from 'react-router-dom';
 
 function PersonalInfo(props) {
-
-    const address = `${props.userStreet}, ${props.userCity}, ${props.userState} ${props.userZipCode}`
-
     return(
-        <InfoContainer>
-            <TitleItem>
-                <MainTitle>Personal Information</MainTitle>
-                <EditButton onClick={() => props.history.push("/edit-personal-information")}>Edit Details</EditButton>
-            </TitleItem>
-            <InfoCell>
-            <CellLable>EMAIL</CellLable>
-            <FetchedUserInfo>{props.userEmail}</FetchedUserInfo>
-            </InfoCell>
-            <InfoCell>
-            <CellLable>PHONE NUMBER</CellLable>
-            <FetchedUserInfo>{props.userPhoneNumber}</FetchedUserInfo>
-            </InfoCell>
-            <InfoCell>
-            <CellLable>ADDRESS</CellLable>
-            <FetchedUserInfo>{address}</FetchedUserInfo>
-            </InfoCell>
-        </InfoContainer>);
+    <InfoContainer>
+        <TitleItem>
+            <MainTitle>User Profile</MainTitle>
+        </TitleItem>
+        <TitleItem>
+            <MainTitle>Personal Information</MainTitle>
+            <EditButton onClick={() => props.history.push("/edit-personal-information")}>Edit Details</EditButton>
+        </TitleItem>
+        <InfoCell>
+          <CellLable>NAME</CellLable>
+          <FetchedUserInfo>{props.userFirstName} {props.userLastName}</FetchedUserInfo>
+        </InfoCell>
+        <InfoCell>
+          <CellLable>TITLE</CellLable>
+          <FetchedUserInfo>{props.userTitle}</FetchedUserInfo>
+        </InfoCell>
+        <InfoCell>
+          <CellLable>FUNCTION</CellLable>
+          <FetchedUserInfo>{props.userFunction}</FetchedUserInfo>
+        </InfoCell>
+
+    </InfoContainer>
+    );
 }
 
 export default withRouter(PersonalInfo);

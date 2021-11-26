@@ -107,8 +107,8 @@ export class App extends React.Component {
                   <Route path="/" exact component={Home} />
 
                   <PrivateRoute allRoles authentication={this.props.authentication} path={ROUTE_APP_LANDING} Component={UserPage} />
-                  <Route path="/edit-contact-information" render={(props) => <EditContactPage{...props}/>}/>
-                  <Route path="/edit-personal-information" render={(props) => <EditPersonalPage{...props}/>}/>
+                  <Route path="/edit-contact-information" exact component={EditContactPage}/>
+                  <Route path="/edit-personal-information" exact component={EditPersonalPage}/>
 
                 </Switch>
               </div>

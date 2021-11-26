@@ -59,6 +59,7 @@ export const MainTitle = styled.h3`
     margin: 0;
     padding: 5px 0;
 `;
+
 export const EditButton = styled(SecondaryButton)`
 &&{
     border: 1px solid;
@@ -69,14 +70,14 @@ export const EditButton = styled(SecondaryButton)`
 function UserProfile(props) {
     return(
     <ContentContainer>
-     <ContactInfo
+     <PersonalInfo
          userFirstName={props.user.firstName}
          userLastName={props.user.lastName}
          userTitle={props.user.title}
          userFunction={props.user.jobFunction}
          onEdit={props.onEditContactInfo}
      />
-     <PersonalInfo
+     <ContactInfo
          userEmail={props.user.email}
          userPhoneNumber={props.user.phone}
          userStreet={props.user.street}

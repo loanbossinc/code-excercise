@@ -3,8 +3,6 @@ import { connect } from "react-redux";
 import { compose } from "redux";
 import { withRouter } from "react-router";
 import styled from "styled-components";
-import AvatarModal from "../AvatarModal";
-import UserProfile from "../UserProfile";
 
 
 const PageContainer = styled.div`
@@ -33,7 +31,7 @@ const Banner = styled.img`
 
 const defaultImageUrl = `/images/default-banner.png`;
 
-function EditPersonalPage(props) {
+function EditPersonalPage() {
 
    
         return (

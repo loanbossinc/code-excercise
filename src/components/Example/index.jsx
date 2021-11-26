@@ -48,7 +48,7 @@ class UserPage extends Component {
                 phone: "",
                 state: "",
                 city: "",
-                zipCode: "",
+                zipcode: "",
                 street: ""
             }
         }

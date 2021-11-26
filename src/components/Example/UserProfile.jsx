@@ -83,7 +83,7 @@ function UserProfile(props) {
          userStreet={props.user.street}
          userCity={props.user.city}
          userState={props.user.state}
-         userZipCode={props.user.zipCode}
+         userZipcode={props.user.zipcode}
          onEdit={props.onEditPersonalInfo}
      />
 

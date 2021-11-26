@@ -12,7 +12,7 @@ import {withRouter} from 'react-router-dom';
 
 function ContactInfo(props) {
 
-    const address = `${props.userStreet}, ${props.userCity}, ${props.userState} ${props.userZipCode}`
+    const address = `${props.userStreet}, ${props.userCity}, ${props.userState} ${props.userZipcode}`
 
     return(
         <InfoContainer>

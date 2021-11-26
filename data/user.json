@@ -1,12 +1,1 @@
-{
-    "firstName": "John",
-    "lastName" : "Doe",
-    "title": "Manager",
-    "jobFunction": "Manage the Assets",
-    "email": "johndoe@email.com",
-    "phone": "(316) 332-2332",
-    "state": "NY",
-    "city" : "New York",
-    "zipcode" : "12232",
-    "street" : "123 Sunny Street"
-}
+{"firstName":"John","lastName":"Doe","title":"Manager","jobFunction":"Manage the Assets","email":"johndoe@email.com","phone":"(316) 332-6666","state":"California","city":"New York","zipcode":"121111","street":"122 Sunny Street"}

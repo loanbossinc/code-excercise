@@ -191,10 +191,16 @@ function EditContactPage() {
 
     },[])
     
-    const onStateChange = event => {  setSelectedStateDropdown(event.value)   }
+    const onStateChange = event => {  
+        setSelectedStateDropdown(event.value)
+        setUser(prevState => ({
+            ...prevState,
+            state: event.label
+        }))
+    }
 
 
-    //borrowed from: https://stackoverflow.com/questions/54150783/react-hooks-usestate-with-object
+    // borrowed from: https://stackoverflow.com/questions/54150783/react-hooks-usestate-with-object
     const handleChange = e =>{
         const {name, value} = e.target;
         setUser(prevState => ({
@@ -203,31 +209,18 @@ function EditContactPage() {
         }))
     }
 
-    console.log(user)
-
     const handleSaveChanges = () => {
-        // const body = {
-        //     phone: newPhoneNumber == '' ? props.location.state.phone : newPhoneNumber,
-        //     state: selectedStateDropdown == undefined ? props.location.state.state : selectedStateDropdown,
-        //     street: newStreet == '' ? props.location.state.street : newStreet,
-        //     city: newCity == '' ? props.location.state.city : newCity,
-        //     zipcode: newZipcode == '' ?  props.location.state.zipcode : newZipcode
-        // }
-    
-        // console.log(body)
-        // fetch('http://localhost:8080/me/profile-update', {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify(body)
-        //   })
-        //   .then(response => response.json()
-        //   .then(data => {
-        //       console.log(data)
-        //   })
-        //   .catch((error) => {
-        //     console.error('Error:', error);
-        //   });
+        fetch('http://localhost:8080/me/contact-update', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(user)
+          })
+          .then(response => response.json())
+          .catch((error) => {
+            console.error('Error:', error);
+          });
     }
+
 
     return (
         <>
@@ -281,7 +274,8 @@ function EditContactPage() {
                             <InfoCell>
                                 <Label for='state'>State</Label>
                                 <Dropdown
-                                    options={user.sta}
+                                    options={user.statesList}
+                                    name="state"
                                     value={selectedStateDropdown}
                                     onChange={onStateChange}
                                 />
@@ -306,7 +300,7 @@ function EditContactPage() {
                             <SaveButton type="submit" onClick={handleSaveChanges} >Save Changes</SaveButton>
                         </ActionSection>
                         <ActionSection>
-                            <CancleButton type="submit">
+                            <CancleButton>
                                 Cancle
                             </CancleButton>
                         </ActionSection>

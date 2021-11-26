@@ -1,14 +1,15 @@
 import React from "react";
-import { 
-    InfoContainer,
-    TitleItem,
-    MainTitle,
-    InfoCell,
+import {
     CellLable,
     FetchedUserInfo,
-    EditButton  
+    EditButton
 } from "./UserProfile";
 import {withRouter} from 'react-router-dom';
+import { 
+  InfoCell,
+  InfoContainer,
+  MainTitle,
+  TitleItem } from "./styles";
 
 function PersonalInfo(props) {
     return(

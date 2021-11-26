@@ -1,14 +1,15 @@
 import React from "react";
-import { 
-    InfoContainer,
-    TitleItem,
-    MainTitle,
-    InfoCell,
+import {
     CellLable,
     FetchedUserInfo,
-    EditButton  
+    EditButton
 } from "./UserProfile";
 import {withRouter} from 'react-router-dom';
+import { 
+    InfoCell,
+    InfoContainer,
+    MainTitle,
+    TitleItem } from "./styles";
 
 function ContactInfo(props) {
 
@@ -21,16 +22,16 @@ function ContactInfo(props) {
                 <EditButton onClick={() => props.history.push("/edit-contact-information")}>Edit Details</EditButton>
             </TitleItem>
             <InfoCell>
-            <CellLable>EMAIL</CellLable>
-            <FetchedUserInfo>{props.userEmail}</FetchedUserInfo>
+                <CellLable>EMAIL</CellLable>
+                <FetchedUserInfo>{props.userEmail}</FetchedUserInfo>
             </InfoCell>
             <InfoCell>
-            <CellLable>PHONE NUMBER</CellLable>
-            <FetchedUserInfo>{props.userPhoneNumber}</FetchedUserInfo>
+                <CellLable>PHONE NUMBER</CellLable>
+                <FetchedUserInfo>{props.userPhoneNumber}</FetchedUserInfo>
             </InfoCell>
             <InfoCell>
-            <CellLable>ADDRESS</CellLable>
-            <FetchedUserInfo>{address}</FetchedUserInfo>
+                <CellLable>ADDRESS</CellLable>
+                <FetchedUserInfo>{address}</FetchedUserInfo>
             </InfoCell>
         </InfoContainer>);
 }

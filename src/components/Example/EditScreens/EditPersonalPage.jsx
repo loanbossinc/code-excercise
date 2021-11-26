@@ -1,51 +1,86 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { compose } from "redux";
 import { withRouter } from "react-router";
-import styled from "styled-components";
+import { 
+    Banner,
+    InfoCell,
+    InfoContainer,
+    MainTitle,
+    PageContainer,
+    TitleItem } from "../styles";
+import { FormContainer, EditContent, Label, Input } from "./styles";
 
 
-const PageContainer = styled.div`
-  max-width: 1120px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-`;
-
-const ContentContainer = styled.div`
-    margin-top: 150px;
-    display: flex;
-    flex-direction: row;
-    column-gap: 50px;
-    margin-bottom: 30px;
-`;
-
-const Banner = styled.img`
-    position: absolute;
-    top: 50;
-    left: 0;
-    height: ${props => props.height};
-    width: ${props => props.width}
-`;
 
 const defaultImageUrl = `/images/default-banner.png`;
 
 function EditPersonalPage() {
+    const [user, setUser] = useState({
+        firstName: "",
+        lastName: "",
+        title: "",
+        jobFunction: "",    
+        email: "",
+        phone: "",
+        state: "",
+        statesList: [],
+        city:"",
+        street: "",
+        zipcode: ""
+    });
+
+    useEffect(()=>{
+        fetch('http://localhost:8080/me/profile-update', {
+            method: 'GET',
+            mode: 'cors',
+            headers: {
+              'Content-Type': 'application/json',
+            }
+          })
+          .then(response => response.json())
+          .then(data => setUser(data))
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+
+    },[])
+
+     console.log(user)
 
    
-        return (
-            <>
-            <Banner
-                src={defaultImageUrl}
-                height="320px"
-                width="100%"
-            />
+    return (
+        <>
+            <Banner src={defaultImageUrl}/>
             <PageContainer>
-               hi there
+                    <FormContainer action='/example'>
+                        <EditContent>
+                            <InfoContainer>
+                                <TitleItem>
+                                    <MainTitle>Personal Information</MainTitle>
+                                </TitleItem>
+                                <InfoCell>
+                                    <Label>First Name</Label>
+                                    <Input 
+                                        type="text"
+                                        name="firstName"
+                                        defaultValue= {"user.firstName"}
+                                    />
+                                </InfoCell>
+                                <InfoCell>
+                                    <Label>Last Name</Label>
+                                    <Input 
+                                        type="text"
+                                        name="lastName"
+                                        defaultValue= {"user.lastName"}
+                                    />
+                                </InfoCell>
+                            </InfoContainer>
+                        </EditContent>
+                    </FormContainer>
             </PageContainer>
-            </>
-        );
+        </>
+    );
 }
 
 const mapStateToProps = ({ }) => ({ });

@@ -5,15 +5,9 @@ import { withRouter } from "react-router";
 import styled from "styled-components";
 import AvatarModal from "./AvatarModal";
 import UserProfile from "./UserProfile";
+import { Banner, PageContainer } from "./styles";
 
 
-const PageContainer = styled.div`
-  max-width: 1120px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-`;
 
 const ContentContainer = styled.div`
     margin-top: 150px;
@@ -23,13 +17,6 @@ const ContentContainer = styled.div`
     margin-bottom: 30px;
 `;
 
-const Banner = styled.img`
-    position: absolute;
-    top: 50;
-    left: 0;
-    height: ${props => props.height};
-    width: ${props => props.width}
-`;
 const defaultImageUrl = `/images/default-banner.png`;
 const defaultAvatarImg = `/images/loanBossLogoLight.png`;
 
@@ -76,11 +63,7 @@ class UserPage extends Component {
     render() {
         return (
             <>
-            <Banner
-                src={defaultImageUrl}
-                height="320px"
-                width="100%"
-            />
+            <Banner src={defaultImageUrl}/>
             <PageContainer>
                 <ContentContainer>
                 <AvatarModal

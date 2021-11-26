@@ -3,57 +3,18 @@ import { connect } from "react-redux";
 import { compose } from "redux";
 import { withRouter } from "react-router";
 import styled from "styled-components";
-import { 
-    InfoContainer,
-    InfoCell,
-    MainTitle,
-    TitleItem } from "../UserProfile";
 import Dropdown from "components/Global/Dropdown/Dropdown";
 import { PrimaryButton, SecondaryButton } from "components/Global/Buttons";
+import { EditContent, FormContainer, Input, Label } from "./styles";
+import { 
+    Banner, 
+    InfoCell, 
+    InfoContainer, 
+    MainTitle, 
+    PageContainer, 
+    TitleItem} from "../styles";
 
 
-const PageContainer = styled.div`
-  max-width: 1120px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-`;
-
-const ContentContainer = styled.form`
-    margin-top: 150px;
-    display: flex;
-    flex-direction: row;
-    column-gap: 50px;
-    margin-bottom: 30px;
-`;
-
-
-
-const EditContent = styled.div`
-    margin-top: 200px;
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-    gap: 30px;
-`
-
-const Banner = styled.img`
-    position: absolute;
-    top: 50;
-    left: 0;
-    height: ${props => props.height};
-    width: ${props => props.width}
-`;
-
-const Label = styled.label`
-    color: grey;
-    margin: 0;
-    width: 150px;
-`
-const Input = styled.input`
-    width: 300px;
-`;
 
 const ActionContainer = styled.div`
     border-radius: 5%;
@@ -165,89 +126,85 @@ function EditContactPage() {
 
     return (
         <>
-        <Banner
-            src={defaultImageUrl}
-            height="320px"
-            width="100%"
-        />
-        <PageContainer>
-            <ContentContainer action='/example'>
-                    <EditContent>
-                        <InfoContainer>
-                            <TitleItem>
-                            <MainTitle>Contact Information</MainTitle>
-                            </TitleItem>
-                            <InfoCell>
-                                <Label for='email'>Email</Label>
-                                <Input 
-                                    type="email"
-                                    defaultValue={user.email}
-                                    disabled={true}
-                                />
-                            </InfoCell>
-                            <InfoCell>
-                                <Label for='phone'>Phone Number</Label>
-                                <Input 
-                                    type="phone"
-                                    name="phone"
-                                    defaultValue={user.phone}
-                                    onBlur={handleChange}
-                                />
-                            </InfoCell>
-                            <InfoCell>
-                                <Label for='street'>Street</Label>
-                                <Input 
-                                    type="text"
-                                    defaultValue={user.street}
-                                    name="street"
-                                    onBlur={handleChange}
-                                />
-                            </InfoCell>
-                            <InfoCell>
-                                <Label for='city'>City</Label>
-                                <Input 
-                                    type="text"
-                                    defaultValue={user.city}
-                                    name="city"
-                                    onBlur={handleChange}
-                                />
-                            </InfoCell>
-                            <InfoCell>
-                                <Label for='state'>State</Label>
-                                <Dropdown
-                                    options={user.statesList}
-                                    name="state"
-                                    value={selectedStateDropdown}
-                                    onChange={onStateChange}
-                                />
-                            </InfoCell>
-                            <InfoCell>
-                                <Label for='zipcode'>Zipcode</Label>
-                                <Input 
-                                    type="text"
-                                    defaultValue={user.zipcode}
-                                    name="zipcode"
-                                    onBlur={handleChange}
-                                />
-                            </InfoCell>
-                        </InfoContainer>
-                    </EditContent>
-                    <ActionContainer>
-                        <ActionSection>
-                            <Name>{user.firstName} {user.lastName}</Name>
-                            <ImageContainer src={defaultAvatarImg}/>
-                        </ActionSection>
-                        <ActionSection>
-                            <SaveButton type="submit" onClick={handleSaveChanges} >Save Changes</SaveButton>
-                        </ActionSection>
-                        <ActionSection>
-                            <CancleButton>
-                                Cancle
-                            </CancleButton>
-                        </ActionSection>
-                    </ActionContainer>
-            </ContentContainer>
-        </PageContainer>
+            <Banner src={defaultImageUrl}/>
+            <PageContainer>
+                <FormContainer action='/example'>
+                        <EditContent>
+                            <InfoContainer>
+                                <TitleItem>
+                                    <MainTitle>Contact Information</MainTitle>
+                                </TitleItem>
+                                <InfoCell>
+                                    <Label for='email'>Email</Label>
+                                    <Input 
+                                        type="email"
+                                        defaultValue={user.email}
+                                        disabled={true}
+                                    />
+                                </InfoCell>
+                                <InfoCell>
+                                    <Label for='phone'>Phone Number</Label>
+                                    <Input 
+                                        type="phone"
+                                        name="phone"
+                                        defaultValue={user.phone}
+                                        onBlur={handleChange}
+                                    />
+                                </InfoCell>
+                                <InfoCell>
+                                    <Label for='street'>Street</Label>
+                                    <Input 
+                                        type="text"
+                                        defaultValue={user.street}
+                                        name="street"
+                                        onBlur={handleChange}
+                                    />
+                                </InfoCell>
+                                <InfoCell>
+                                    <Label for='city'>City</Label>
+                                    <Input 
+                                        type="text"
+                                        defaultValue={user.city}
+                                        name="city"
+                                        onBlur={handleChange}
+                                    />
+                                </InfoCell>
+                                <InfoCell>
+                                    <Label for='state'>State</Label>
+                                    <Dropdown
+                                        options={user.statesList}
+                                        name="state"
+                                        value={selectedStateDropdown}
+                                        onChange={onStateChange}
+                                    />
+                                </InfoCell>
+                                <InfoCell>
+                                    <Label for='zipcode'>Zipcode</Label>
+                                    <Input 
+                                        type="text"
+                                        defaultValue={user.zipcode}
+                                        name="zipcode"
+                                        onBlur={handleChange}
+                                    />
+                                </InfoCell>
+                            </InfoContainer>
+                        </EditContent>
+                        <ActionContainer>
+                            <ActionSection>
+                                <Name>{user.firstName} {user.lastName}</Name>
+                                <ImageContainer src={defaultAvatarImg}/>
+                            </ActionSection>
+                            <ActionSection>
+                                <SaveButton type="submit" onClick={handleSaveChanges} >Save Changes</SaveButton>
+                            </ActionSection>
+                            <ActionSection>
+                                <CancleButton>
+                                    Cancle
+                                </CancleButton>
+                            </ActionSection>
+                        </ActionContainer>
+                </FormContainer>
+            </PageContainer>
         </>
     );
 }

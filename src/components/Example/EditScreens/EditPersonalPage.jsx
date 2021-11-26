@@ -64,7 +64,7 @@ function EditPersonalPage() {
                                     <Input 
                                         type="text"
                                         name="firstName"
-                                        defaultValue= {"user.firstName"}
+                                        defaultValue={user.firstName}
                                     />
                                 </InfoCell>
                                 <InfoCell>
@@ -72,7 +72,15 @@ function EditPersonalPage() {
                                     <Input 
                                         type="text"
                                         name="lastName"
-                                        defaultValue= {"user.lastName"}
+                                        defaultValue={user.lastName}
+                                    />
+                                </InfoCell>
+                                <InfoCell>
+                                    <Label>Title</Label>
+                                    <Input 
+                                        type="text"
+                                        name="title"
+                                        defaultValue={user.title}
                                     />
                                 </InfoCell>
                             </InfoContainer>

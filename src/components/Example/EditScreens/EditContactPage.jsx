@@ -3,8 +3,7 @@ import { connect } from "react-redux";
 import { compose } from "redux";
 import { withRouter } from "react-router";
 import styled from "styled-components";
-import UserProfile, { 
-    CellLable,
+import { 
     InfoContainer,
     InfoCell,
     MainTitle,
@@ -100,60 +99,6 @@ const CancleButton = styled(SecondaryButton)`
 const defaultImageUrl = `/images/default-banner.png`;
 const defaultAvatarImg = `/images/loanBossLogoLight.png`;
 
-// const stateOptions = [
-//     {label: "AK"},
-//     {label: "AL"},
-//     {label: "AR"},
-//     {label: "AZ"},
-//     {label: "CA"},
-//     {label: "CO"},
-//     {label: "CT"},
-//     {label: "DE"},
-//     {label: "FL"},
-//     {label: "GA"},
-//     {label: "HI"},
-//     {label: "IA"},
-//     {label: "ID"},
-//     {label: "IL"},
-//     {label: "KS"},
-//     {label: "KY"},
-//     {label: "LA"},
-//     {label: "MA"},
-//     {label: "MD"},
-//     {label: "ME"},
-//     {label: "MI"},
-//     {label: "MN"},
-//     {label: "MO"},
-//     {label: "MS"},
-//     {label: "MT"},
-//     {label: "NC"},
-//     {label: "ND"},
-//     {label: "NE"},
-//     {label: "NH"},
-//     {label: "NJ"},
-//     {label: "NM"},
-//     {label: "NV"},
-//     {label: "NY"},
-//     {label: "OH"},
-//     {label: "OK"},
-//     {label: "OR"},
-//     {label: "PA"},
-//     {label: "RI"},
-//     {label: "SC"},
-//     {label: "SD"},
-//     {label: "TN"},
-//     {label: "TX"},
-//     {label: "UT"},
-//     {label: "VA"},
-//     {label: "VT"},
-//     {label: "WA"},
-//     {label: "WI"},
-//     {label: "WV"},
-//     {label: "WY"}
-// ]
-
-
-
 
 function EditContactPage() {
     const [user, setUser] = useState({
@@ -170,10 +115,6 @@ function EditContactPage() {
         zipcode: ""
     });
     const [selectedStateDropdown, setSelectedStateDropdown] = useState('');
-    const [newPhoneNumber, setNewPhoneNumber] = useState('');
-    const [newStreet, setNewStreet] = useState('');
-    const [newCity, setNewCity] = useState('');
-    const [newZipcode, setNewZipcode] = useState('');
 
     useEffect(()=>{
         fetch('http://localhost:8080/me/contact-update', {

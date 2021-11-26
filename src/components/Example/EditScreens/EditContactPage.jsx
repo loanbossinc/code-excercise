@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { compose } from "redux";
 import { withRouter } from "react-router";
@@ -12,50 +12,10 @@ import {
     InfoContainer, 
     MainTitle, 
     PageContainer, 
-    TitleItem} from "../styles";
+    TitleItem
+} from "../styles";
+import ActionSection from "./ActionSection";
 
-
-
-const ActionContainer = styled.div`
-    border-radius: 5%;
-    background-color: white;
-    border: rgba(0, 0, 0, 0.2);
-    box-shadow: 5px 5px 10px #888888;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 200px;
-    width: 300px;
-    gap: 10px;
-`
-const ActionSection = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 150px;
-`;
-
-const Name = styled.h3`
-    font-weight: bold;
-`
-const ImageContainer = styled.img`
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    padding: auto;
-`;
-
-const SaveButton = styled(PrimaryButton)`
-&&{
-    width: 280px;
-}`
-
-const CancleButton = styled(SecondaryButton)`
-&&{
-    width: 280px;
-    border: 1px solid;
-}`
 
 const defaultImageUrl = `/images/default-banner.png`;
 const defaultAvatarImg = `/images/loanBossLogoLight.png`;
@@ -189,20 +149,12 @@ function EditContactPage() {
                                 </InfoCell>
                             </InfoContainer>
                         </EditContent>
-                        <ActionContainer>
-                            <ActionSection>
-                                <Name>{user.firstName} {user.lastName}</Name>
-                                <ImageContainer src={defaultAvatarImg}/>
-                            </ActionSection>
-                            <ActionSection>
-                                <SaveButton type="submit" onClick={handleSaveChanges} >Save Changes</SaveButton>
-                            </ActionSection>
-                            <ActionSection>
-                                <CancleButton>
-                                    Cancle
-                                </CancleButton>
-                            </ActionSection>
-                        </ActionContainer>
+                        <ActionSection 
+                            firstName={user.firstName}
+                            lastName={user.lastName}
+                            defaultAvatarImg={defaultAvatarImg}
+                            handleSaveChanges={handleSaveChanges}
+                        />
                 </FormContainer>
             </PageContainer>
         </>

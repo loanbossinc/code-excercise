@@ -10,10 +10,10 @@ import {
     PageContainer,
     TitleItem } from "../styles";
 import { FormContainer, EditContent, Label, Input } from "./styles";
-
-
+import ActionSection from "./ActionSection";
 
 const defaultImageUrl = `/images/default-banner.png`;
+const defaultAvatarImg = `/images/loanBossLogoLight.png`;
 
 function EditPersonalPage() {
     const [user, setUser] = useState({
@@ -46,7 +46,26 @@ function EditPersonalPage() {
 
     },[])
 
-     console.log(user)
+    // borrowed from: https://stackoverflow.com/questions/54150783/react-hooks-usestate-with-object
+    const handleChange = e =>{
+        const {name, value} = e.target;
+        setUser(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    }
+
+    const handleSaveChanges = () => {
+        fetch('http://localhost:8080/me/profile-update', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(user)
+          })
+          .then(response => response.json())
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+    }
 
    
     return (
@@ -65,6 +84,7 @@ function EditPersonalPage() {
                                         type="text"
                                         name="firstName"
                                         defaultValue={user.firstName}
+                                        onBlur={handleChange}
                                     />
                                 </InfoCell>
                                 <InfoCell>
@@ -73,6 +93,7 @@ function EditPersonalPage() {
                                         type="text"
                                         name="lastName"
                                         defaultValue={user.lastName}
+                                        onBlur={handleChange}
                                     />
                                 </InfoCell>
                                 <InfoCell>
@@ -81,10 +102,26 @@ function EditPersonalPage() {
                                         type="text"
                                         name="title"
                                         defaultValue={user.title}
+                                        onBlur={handleChange}
+                                    />
+                                </InfoCell>
+                                <InfoCell>
+                                    <Label>Job Function</Label>
+                                    <Input 
+                                        type="text"
+                                        name="jobFunction"
+                                        disabled={true}
+                                        defaultValue={user.jobFunction}
                                     />
                                 </InfoCell>
                             </InfoContainer>
                         </EditContent>
+                        <ActionSection 
+                            firstName={user.firstName}
+                            lastName={user.lastName}
+                            defaultAvatarImg={defaultAvatarImg}
+                            handleSaveChanges={handleSaveChanges}
+                        />
                     </FormContainer>
             </PageContainer>
         </>
